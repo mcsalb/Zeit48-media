@@ -1,0 +1,9 @@
+{"typ":"karussell","theme":"dark","thema":"mythos-pausen-arbeitszeit","fuss":"MYTHOS VS. FAKT",
+ "folien":[
+  {"label":"MYTHOS VS. FAKT","hook":"3 IRRTÜMER<br>ÜBER DEINE<br><em>ARBEITSZEIT</em>","hookGroesse":150,"text":"Wisch dich durch – stimmt's oder stimmt's nicht?"},
+  {"label":"IRRTUM 1 · § 4 ARBZG","element":{"type":"mythos","mythos":"Die Pause mach ich einfach am Ende und geh früher.","fakt":"Pausen müssen im Voraus feststehen. Und länger als 6 Stunden am Stück darf niemand ohne Pause arbeiten."}},
+  {"label":"IRRTUM 2","element":{"type":"mythos","mythos":"Pausen zählen zur Arbeitszeit.","fakt":"Ruhepausen gehören nicht zur Arbeitszeit (§ 2 ArbZG). Sie werden deshalb in der Regel auch nicht bezahlt."}},
+  {"label":"IRRTUM 3 · § 3 ARBZG","element":{"type":"mythos","mythos":"10 Stunden am Tag sind immer erlaubt.","fakt":"Nur, wenn im Schnitt von 6 Monaten oder 24 Wochen 8 Stunden pro Werktag nicht überschritten werden."}},
+  {"label":"MIT ZEIT48","hook":"REGELN<br><em>IM BLICK.</em>","hookGroesse":150,"element":{"type":"chips","items":["Pausenprüfung nach § 4","8 h / 48 h geprüft (§ 3)","Ruhezeit 11 h (§ 5)"]}},
+  {"label":"JETZT STARTEN","cta":true}
+ ]}

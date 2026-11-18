@@ -1,0 +1,7 @@
+{"typ":"reel","theme":"dark","thema":"pov-freitag-17","coverZeit":1.5,
+ "szenen":[
+  {"dauer":2.6,"label":"POV","hook":"FREITAG,<br><em>17 UHR.</em>","hookGroesse":190},
+  {"dauer":4.6,"label":"DER CHEF FRAGT","elStart":0.4,"element":{"type":"pov","zeilen":[{"wer":"chef","text":"Stundenzettel bitte bis heute!"},{"wer":"team","name":"MAX","text":"Montag war ich … 7 bis 16 Uhr? Oder Dienstag?"},{"wer":"team","name":"LISA","text":"Wer war Mittwoch auf der Baustelle?"}]}},
+  {"dauer":3.0,"label":"UND DANN","hook":"KEINER<br>WEISS ES<br><em>MEHR.</em>","hookGroesse":170},
+  {"dauer":4.0,"label":"MIT ZEIT48","hook":"EINFACH<br><em>STEMPELN.</em>","hookGroesse":160,"elStart":0.8,"element":{"type":"chips","items":["Per App oder Browser","Auch offline","Überstunden sofort sichtbar"]}}
+ ]}

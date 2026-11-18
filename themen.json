@@ -366,6 +366,37 @@
     "audioId": "544713431841568",
     "titel": "Lofi Street – bbox"
    }
+  },
+  {
+   "datum": "2026-11-20",
+   "kw": 47,
+   "tag": "fr",
+   "format": "bild",
+   "thema": "zahl-11",
+   "hook": "11 Stunden Ruhezeit",
+   "ordner": "posts/KW47/5-fr-bild"
+  },
+  {
+   "datum": "2026-11-21",
+   "kw": 47,
+   "tag": "sa",
+   "format": "karussell",
+   "thema": "mythos-pause-bezahlt",
+   "hook": "3 Irrtümer über deine Arbeitszeit",
+   "ordner": "posts/KW47/6-sa-karussell"
+  },
+  {
+   "datum": "2026-11-22",
+   "kw": 47,
+   "tag": "so",
+   "format": "reel",
+   "thema": "pov-freitag-17",
+   "hook": "POV: Freitag, 17 Uhr.",
+   "ordner": "posts/KW47/7-so-reel",
+   "musik": {
+    "audioId": "423124700418880",
+    "titel": "Good Vibes – Giulio Cercato"
+   }
   }
  ]
 }
