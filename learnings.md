@@ -13,4 +13,5 @@ Jeden Sonntag vor der Produktion: Metricool-Zahlen der Vorwoche lesen (Aufrufe/R
 ### KW47 (Start)
 
 - Testlauf: Reel „6 Stunden gearbeitet. Keine Pause?“ als Entwurf für Fr 20.11.
+- Musik über Metricool (Instagram-Katalog) funktioniert seit 18.11.: „Lofi Street“ (bbox).
 - Noch keine Zahlen.

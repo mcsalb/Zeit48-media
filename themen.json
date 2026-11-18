@@ -361,7 +361,11 @@
    "format": "reel",
    "thema": "pausen-6-9",
    "hook": "6 Stunden gearbeitet. Keine Pause?",
-   "ordner": "posts/KW47/5-fr-reel"
+   "ordner": "posts/KW47/5-fr-reel",
+   "musik": {
+    "audioId": "544713431841568",
+    "titel": "Lofi Street – bbox"
+   }
   }
  ]
 }
