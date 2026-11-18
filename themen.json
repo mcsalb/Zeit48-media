@@ -1,0 +1,367 @@
+{
+ "hinweis": "Themenpool für die Wochenproduktion. Kategorie: recht, funktion, alltag, zahl, mythos. paket = ab welchem Paket die Funktion verfügbar ist (laut zeit48.de, vor Nutzung prüfen). Jede Nutzung in 'historie' eintragen; ein Thema frühestens nach 6 Wochen wieder, dann mit neuem Hook/Format.",
+ "formate": {
+  "mo": "reel · 48 Sekunden Arbeitsrecht, Streitfrage (recht)",
+  "di": "karussell · Regel Schritt für Schritt, 5–7 Folien (recht/funktion)",
+  "mi": "bild · POV/Alltags-Meme (alltag)",
+  "do": "reel · Funktion in Aktion (funktion)",
+  "fr": "bild · Zahl/Fakt der Woche (zahl/recht)",
+  "sa": "karussell · Checkliste oder Mythos vs. Fakt (mythos)",
+  "so": "reel · leichter Humor-POV, wenig Produkt (alltag)"
+ },
+ "themen": [
+  {
+   "id": "hoechstarbeitszeit-8-10",
+   "titel": "Höchstarbeitszeit: 8 h täglich, bis 10 h mit Ausgleich (§ 3 ArbZG)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "woche-48",
+   "titel": "48 Stunden pro Woche: woher der Name Zeit48 kommt (§ 3 ArbZG, 6 Werktage × 8 h)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "pausen-6-9",
+   "titel": "Pausen: mehr als 6 h → 30 min, mehr als 9 h → 45 min (§ 4 ArbZG)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "pausen-15-min",
+   "titel": "Nur Pausenabschnitte ab 15 Minuten zählen (§ 4 ArbZG)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "pause-am-ende",
+   "titel": "Pause am Ende des Tages ist keine Pause (§ 4: im Voraus feststehend, nicht länger als 6 h am Stück arbeiten)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "ruhezeit-11",
+   "titel": "11 Stunden Ruhezeit zwischen Feierabend und Arbeitsbeginn (§ 5 ArbZG)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "sonntag-feiertag",
+   "titel": "Sonn- und Feiertagsarbeit: grundsätzlich verboten, Ausnahmen § 10, Ersatzruhetag § 11",
+   "kategorie": "recht"
+  },
+  {
+   "id": "ersatzruhetag",
+   "titel": "Ersatzruhetag nach Sonntagsarbeit innerhalb von 2 Wochen (§ 11 Abs. 3)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "jugend-pausen",
+   "titel": "Jugendliche: 60 min Pause bei mehr als 6 h (JArbSchG § 11)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "pflicht-erfassung-bag",
+   "titel": "Pflicht zur Arbeitszeiterfassung: BAG-Beschluss 13.09.2022 (1 ABR 22/21) – aktuellen Stand prüfen",
+   "kategorie": "recht"
+  },
+  {
+   "id": "vertrauensarbeitszeit",
+   "titel": "Vertrauensarbeitszeit heißt nicht: keine Erfassung (BAG 2022)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "aufbewahrung",
+   "titel": "Aufzeichnungen über Mehrarbeit mind. 2 Jahre aufbewahren (§ 16 Abs. 2 ArbZG)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "nachtarbeit",
+   "titel": "Nachtarbeit: 23–6 Uhr, Nachtarbeitnehmer, Ausgleich (§§ 2, 6 ArbZG)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "bereitschaft",
+   "titel": "Bereitschaftsdienst zählt als Arbeitszeit",
+   "kategorie": "recht"
+  },
+  {
+   "id": "umkleidezeit",
+   "titel": "Umkleiden und Wegezeiten: wann es Arbeitszeit ist – nur allgemein, keine Rechtsberatung",
+   "kategorie": "recht"
+  },
+  {
+   "id": "ueberstunden-ausgleich",
+   "titel": "10 h am Tag nur, wenn im Schnitt 8 h in 6 Monaten/24 Wochen (§ 3)",
+   "kategorie": "recht"
+  },
+  {
+   "id": "mindestlohn-doku",
+   "titel": "Dokumentationspflicht für Minijobs und bestimmte Branchen (§ 17 MiLoG) – Stand prüfen",
+   "kategorie": "recht"
+  },
+  {
+   "id": "bussgeld",
+   "titel": "Verstöße gegen das ArbZG können Bußgelder auslösen (§ 22 ArbZG) – Höhe vorher prüfen",
+   "kategorie": "recht"
+  },
+  {
+   "id": "stempeln-app",
+   "titel": "Stempeln im Browser oder als App, auch offline – Buchung wird später übertragen",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "nfc-qr",
+   "titel": "Stempeln per NFC-Tag oder QR-Code am Eingang/Fahrzeug",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "gps-umkreis",
+   "titel": "Standort mit Umkreisregel: Stempeln nur auf der Baustelle",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "timer-vergessen",
+   "titel": "Vergessener Timer wird zur Grenzzeit automatisch ausgestempelt",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "zurueckstempeln",
+   "titel": "Zu früh aus der Pause zurück? Zeit zählt ab Pausenende, Restdauer wird angezeigt",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "pause-erfuellt",
+   "titel": "Statusanzeige „§ 4 erfüllt“ / „Pause erfüllt“ auf einen Blick",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "urlaub-antrag",
+   "titel": "Urlaubsantrag digital statt Zettel, Genehmigung per Klick",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "resturlaub",
+   "titel": "Resturlaub automatisch berechnet",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "feiertage-16",
+   "titel": "Feiertage aller 16 Bundesländer hinterlegt",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "kalender-abo",
+   "titel": "Abwesenheiten als Kalender-Abo",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "ueberstunden-sichtbar",
+   "titel": "Überstunden automatisch sichtbar statt Excel-Chaos",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "csv-export",
+   "titel": "CSV-Export für jedes Lohnbüro",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "datev-lohn",
+   "titel": "DATEV-Lohnexport",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "projektzeiten",
+   "titel": "Projektzeiten erfassen",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "budgetwarnung",
+   "titel": "Budgetwarnung, bevor das Projektbudget überschritten ist",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "genehmigungskette",
+   "titel": "Genehmigungsketten / Vier-Augen-Prinzip",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "berichte",
+   "titel": "Berichte für Chef und Büro",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "standorte",
+   "titel": "Mehrere Standorte verwalten",
+   "kategorie": "funktion",
+   "paket": "Plus"
+  },
+  {
+   "id": "audit-log",
+   "titel": "Audit-Log: jede Änderung nachvollziehbar",
+   "kategorie": "funktion",
+   "paket": "Enterprise"
+  },
+  {
+   "id": "api",
+   "titel": "API-Zugang",
+   "kategorie": "funktion",
+   "paket": "Enterprise"
+  },
+  {
+   "id": "bueroplus",
+   "titel": "Anbindung an microtech büro+",
+   "kategorie": "funktion",
+   "paket": "Enterprise"
+  },
+  {
+   "id": "hosting-de",
+   "titel": "Hosting in Deutschland, AVV",
+   "kategorie": "funktion",
+   "paket": "Basis"
+  },
+  {
+   "id": "preise",
+   "titel": "Basis 3,90 € / Plus 5,90 € / Enterprise 8,90 € je Platz und Monat netto bei jährlicher Zahlung, mind. 5 Plätze; monatlich 4,35/6,60/9,90 €",
+   "kategorie": "funktion"
+  },
+  {
+   "id": "test-14",
+   "titel": "14 Tage kostenlos testen, ohne Kreditkarte",
+   "kategorie": "funktion"
+  },
+  {
+   "id": "einrichtung-schnell",
+   "titel": "In wenigen Minuten startklar: Team anlegen, App installieren, stempeln – nur belegbare Schritte nennen",
+   "kategorie": "funktion"
+  },
+  {
+   "id": "pov-freitag-17",
+   "titel": "POV: Freitag, 17 Uhr – Stundenzettel nachtragen",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-wer-war-wo",
+   "titel": "POV: Wer war eigentlich wie lange auf der Baustelle?",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-zettel-kaffee",
+   "titel": "POV: Der Stundenzettel hat einen Kaffeefleck – und die Zahl ist weg",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-lohnbuero",
+   "titel": "POV: Das Lohnbüro ruft zum dritten Mal an",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-urlaub-whatsapp",
+   "titel": "POV: Urlaubsantrag per WhatsApp um 23 Uhr",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-pause-vergessen",
+   "titel": "POV: „Pause? Hab ich durchgemacht, Chef.“",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-excel",
+   "titel": "POV: Die Excel-Tabelle mit 14 Reitern",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-montag-stempeln",
+   "titel": "POV: Montagmorgen, alle vergessen zu stempeln",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-azubi",
+   "titel": "POV: Der Azubi fragt, warum er 60 Minuten Pause hat",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-jahresende",
+   "titel": "POV: Jahresende – wie viel Resturlaub hat eigentlich wer?",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "pov-pruefung",
+   "titel": "POV: Prüfung steht an, und die Zeitnachweise liegen im Handschuhfach",
+   "kategorie": "alltag"
+  },
+  {
+   "id": "zahl-30",
+   "titel": "Zahl der Woche: 30 Minuten",
+   "kategorie": "zahl"
+  },
+  {
+   "id": "zahl-11",
+   "titel": "Zahl der Woche: 11 Stunden Ruhezeit",
+   "kategorie": "zahl"
+  },
+  {
+   "id": "zahl-48",
+   "titel": "Zahl der Woche: 48 Stunden",
+   "kategorie": "zahl"
+  },
+  {
+   "id": "zahl-16",
+   "titel": "Zahl der Woche: 16 Bundesländer, 16 Feiertagskalender",
+   "kategorie": "zahl"
+  },
+  {
+   "id": "zahl-15",
+   "titel": "Zahl der Woche: 15 Minuten Mindestpause je Abschnitt",
+   "kategorie": "zahl"
+  },
+  {
+   "id": "mythos-kleinbetrieb",
+   "titel": "Mythos: Kleinbetriebe müssen nichts erfassen – Stand prüfen",
+   "kategorie": "mythos"
+  },
+  {
+   "id": "mythos-pause-bezahlt",
+   "titel": "Mythos: Pause ist bezahlte Arbeitszeit",
+   "kategorie": "mythos"
+  },
+  {
+   "id": "mythos-excel-reicht",
+   "titel": "Mythos/Frage: Reicht eine Excel-Liste? – vorsichtig formulieren, Stand prüfen",
+   "kategorie": "mythos"
+  },
+  {
+   "id": "checkliste-start",
+   "titel": "Checkliste: 5 Schritte zur digitalen Zeiterfassung",
+   "kategorie": "mythos"
+  },
+  {
+   "id": "checkliste-pruefung",
+   "titel": "Checkliste: Was bei einer Prüfung vorliegen sollte – allgemein, Stand prüfen",
+   "kategorie": "mythos"
+  }
+ ],
+ "historie": [
+  {
+   "datum": "2026-11-20",
+   "kw": 47,
+   "tag": "fr",
+   "format": "reel",
+   "thema": "pausen-6-9",
+   "hook": "6 Stunden gearbeitet. Keine Pause?",
+   "ordner": "posts/KW47/5-fr-reel"
+  }
+ ]
+}

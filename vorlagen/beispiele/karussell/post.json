@@ -1,0 +1,8 @@
+{"typ":"karussell","theme":"dark","fuss":"MYTHOS VS. FAKT",
+ "folien":[
+  {"label":"MYTHOS VS. FAKT","hook":"PAUSE IST<br><em>ARBEITSZEIT?</em>","hookGroesse":170,"text":"Wisch dich durch – drei Irrtümer aus dem Büroalltag."},
+  {"label":"IRRTUM 1","element":{"type":"mythos","mythos":"Die Pause kann ich auch am Ende machen und früher gehen.","fakt":"Pausen müssen vorher feststehen. Länger als 6 Stunden am Stück arbeiten ist nicht erlaubt (§ 4 ArbZG)."}},
+  {"label":"SO GEHT'S","element":{"type":"checkliste","items":["Pause im Voraus festlegen","Abschnitte ab 15 Minuten","Mehr als 6 h → 30 Minuten","Mehr als 9 h → 45 Minuten"]}},
+  {"label":"MIT ZEIT48","hook":"„§ 4 ERFÜLLT“","hookGroesse":130,"element":{"type":"pov","zeilen":[{"wer":"team","text":"Pause gemacht, Chef!"},{"wer":"chef","text":"Seh ich – steht schon in Zeit48."}]}},
+  {"label":"JETZT STARTEN","cta":true}
+ ]}

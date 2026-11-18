@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Zeit48 Reel, 1080 × 1920. window.setze(spec) einmal, dann window.render(t) je Frame.
+     Sichere Zone: oben 250 px, unten 400 px frei (Instagram-UI). -->
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="zeit48.css"><script src="elemente.js"></script>
+<style>
+#f{width:1080px;height:1920px}
+.sz{position:absolute;left:88px;right:88px;top:290px;bottom:430px;display:flex;flex-direction:column;justify-content:center}
+.sz .label{margin-bottom:30px;font-size:28px}
+.sz .hook{margin-bottom:40px}
+.sz .text{font-size:44px;line-height:1.3}
+.sz .el-wrap{margin-top:60px}
+.bar{position:absolute;left:0;top:0;height:8px;background:#D4AF37}
+</style></head><body>
+<div id="f" class="frame dark"></div>
+<script>
+let S = null;
+window.setze = (s) => {
+  S = s; S.theme = s.theme || 'dark';
+  const sz = s.szenen.slice();
+  if (s.abschluss !== false) sz.push({ dauer: 3.2, abschluss: true });
+  S.alle = sz; let t = 0; for (const x of sz) { x.t0 = t; t += x.dauer; } S.gesamt = t;
+  document.getElementById('f').className = 'frame ' + S.theme;
+  return t;
+};
+const fade = (lt, d0, len = .45) => Z.ease((lt - d0) / len);
+window.render = (t) => {
+  const f = document.getElementById('f'), th = S.theme;
+  let sc = S.alle[S.alle.length - 1];
+  for (const x of S.alle) if (t >= x.t0 && t < x.t0 + x.dauer) { sc = x; break; }
+  const lt = t - sc.t0, out = sc === S.alle[S.alle.length - 1] ? 1 : 1 - Z.ease((lt - (sc.dauer - .35)) / .35);
+  const st = (d) => { const q = fade(lt, d); return `opacity:${q * out};transform:translateY(${(1 - q) * 40}px)`; };
+  let html = '';
+  if (sc.abschluss) {
+    html = `<div class="sz" style="align-items:center;text-align:center">
+      <div style="${st(0)}">${Z.logo(th, 520)}</div>
+      <div class="hook" style="font-size:120px;margin:70px 0 30px;${st(.35)}">14 TAGE<br><em>KOSTENLOS</em> TESTEN</div>
+      <div class="label" style="font-size:34px;${st(.7)}">ZEIT48.DE · LINK IN BIO</div></div>`;
+  } else {
+    const ep = Z.clamp((lt - (sc.elStart ?? .6)) / Math.max(.6, sc.dauer - (sc.elStart ?? .6) - .7));
+    html = `<div class="sz" ${sc.zentriert ? 'style="align-items:center;text-align:center"' : ''}>
+      ${sc.label ? `<div class="label" style="${st(0)}">${sc.label}</div>` : ''}
+      ${sc.hook ? `<div class="hook" style="font-size:${sc.hookGroesse || 170}px;${st(.12)}">${sc.hook}</div>` : ''}
+      ${sc.text ? `<div class="text" style="${st(.45)}">${sc.text}</div>` : ''}
+      ${sc.element ? `<div class="el-wrap" style="opacity:${fade(lt, .5) * out}">${Z.element(sc.element, th, ep)}</div>` : ''}
+    </div>`;
+  }
+  f.innerHTML = html + `<div class="bar" style="width:${t / S.gesamt * 1080}px"></div>`;
+};
+</script></body></html>

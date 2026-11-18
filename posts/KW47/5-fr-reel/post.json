@@ -1,0 +1,15 @@
+{
+  "typ": "reel",
+  "theme": "dark",
+  "thema": "pausen-6-9",
+  "coverZeit": 1.6,
+  "szenen": [
+    {"dauer": 2.6, "label": "§ 4 ARBZG", "hook": "6 STUNDEN<br>GEARBEITET.<br><em>KEINE PAUSE?</em>", "hookGroesse": 150},
+    {"dauer": 3.0, "label": "DAS PROBLEM", "hook": "„MACH ICH<br>SPÄTER.“", "hookGroesse": 170, "text": "Und am Freitag weiß keiner mehr, wer wann Pause hatte."},
+    {"dauer": 4.4, "label": "DIE REGEL", "hook": "MEHR ALS 6 H<br><em>→ 30 MIN</em>", "hookGroesse": 140, "elStart": 0.7,
+     "element": {"type": "tagesleiste", "start": 7, "end": 15, "titel": "BEISPIEL · 7:00–14:30", "blocks": [{"von":7,"bis":10.5,"art":"arbeit"},{"von":10.5,"bis":11,"art":"pause"},{"von":11,"bis":14.5,"art":"arbeit"}]}},
+    {"dauer": 3.6, "label": "UND AB 9 STUNDEN", "hook": "MEHR ALS 9 H<br><em>→ 45 MIN</em>", "hookGroesse": 140, "text": "Gezählt werden nur Pausen <b>ab 15 Minuten</b>."},
+    {"dauer": 3.4, "label": "MIT ZEIT48", "hook": "ZEIT48<br>RECHNET<br><em>MIT.</em>", "hookGroesse": 160, "elStart": 0.9,
+     "element": {"type": "chips", "items": ["Pausenprüfung nach ArbZG", "Stempeln per App", "„§ 4 erfüllt“ auf einen Blick"]}}
+  ]
+}

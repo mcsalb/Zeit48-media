@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!-- Zeit48 Bild / Karussell-Folie, 1080 × 1350. SPEC wird vom Renderer gesetzt: window.zeichne(spec) -->
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="zeit48.css"><script src="elemente.js"></script>
+<style>
+#f{width:1080px;height:1350px}
+#c{position:absolute;left:88px;right:88px;top:215px;bottom:150px;display:flex;flex-direction:column}
+#c .label{margin-bottom:30px}
+#c .hook{margin-bottom:38px}
+#c .text{max-width:880px}
+#c .unten{margin-top:auto}
+#c.mitte{justify-content:center}
+#c.mitte .unten{margin-top:60px}
+</style></head><body>
+<div id="f" class="frame"></div>
+<script>
+window.zeichne = (s) => {
+  const f = document.getElementById('f'), th = s.theme || 'dark';
+  f.className = 'frame ' + th;
+  const cta = s.cta ? `<div style="margin-top:auto"><div class="hook" style="font-size:96px;margin-bottom:22px">14 TAGE<br><em>KOSTENLOS</em> TESTEN</div><div class="text">${s.cta === true ? 'Link in Bio · zeit48.de' : s.cta}</div></div>` : '';
+  f.innerHTML = `<div class="logo">${Z.logo(th)}</div>${s.zaehler ? `<div class="counter">${s.zaehler}</div>` : ''}
+  <div id="c" class="${s.layout || ''}">
+    ${s.label ? `<div class="label">${s.label}</div>` : ''}
+    ${s.hook ? `<div class="hook" style="font-size:${s.hookGroesse || 150}px">${s.hook}</div>` : ''}
+    ${s.text ? `<div class="text">${s.text}</div>` : ''}
+    ${s.element ? `<div class="unten">${Z.element(s.element, th, 1)}</div>` : ''}
+    ${cta}
+  </div>${Z.footer(s.fuss, 1262)}`;
+};
+</script></body></html>
