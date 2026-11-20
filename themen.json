@@ -1,5 +1,5 @@
 {
- "hinweis": "Themenpool für die Wochenproduktion. Kategorie: recht, funktion, alltag, zahl, mythos. paket = ab welchem Paket die Funktion verfügbar ist (laut zeit48.de, vor Nutzung prüfen). Jede Nutzung in 'historie' eintragen; ein Thema frühestens nach 6 Wochen wieder, dann mit neuem Hook/Format.",
+ "hinweis": "Themenpool für die Wochenproduktion. Kategorie: recht, funktion, alltag, zahl, mythos. paket = ab welchem Paket die Funktion verfügbar ist (laut zeit48.de, vor Nutzung prüfen). Jede Nutzung in 'historie' eintragen; ein Thema frühestens nach 6 Wochen wieder, dann mit neuem Hook/Format. KEINE PREISE: niemals Preise (€ je Platz, Pakete-Preise) nennen; „14 Tage kostenlos testen“ ist erlaubt.",
  "formate": {
   "mo": "reel · 48 Sekunden Arbeitsrecht, Streitfrage (recht)",
   "di": "karussell · Regel Schritt für Schritt, 5–7 Folien (recht/funktion)",
@@ -231,11 +231,6 @@
    "titel": "Hosting in Deutschland, AVV",
    "kategorie": "funktion",
    "paket": "Basis"
-  },
-  {
-   "id": "preise",
-   "titel": "Basis 3,90 € / Plus 5,90 € / Enterprise 8,90 € je Platz und Monat netto bei jährlicher Zahlung, mind. 5 Plätze; monatlich 4,35/6,60/9,90 €",
-   "kategorie": "funktion"
   },
   {
    "id": "test-14",

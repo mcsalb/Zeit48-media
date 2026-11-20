@@ -13,5 +13,5 @@ window.render=t=>{
  const inner=sc.ende?`<div style="text-align:center;opacity:${q(-3)}">${BRAND.ende()}</div>`:body(sc,q);
  document.getElementById('f').innerHTML=`${sc.ende?'':`<div class="rtop">${BRAND.top()}</div>`}<div class="sz">${inner}</div>${S.nobar?'':`<div class="bar" style="width:${t/T*1080}px"></div>`}`;
 };
-window.fontsOk=async()=>{for(const x of BRAND.fonts)await document.fonts.load(x);await document.fonts.ready};
+window.fontsOk=async()=>{for(const x of BRAND.fonts)await document.fonts.load(x);await document.fonts.ready;await Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r})))};
 </script></body></html>

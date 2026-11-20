@@ -1,5 +1,30 @@
-{"typ":"reel","dark":true,"szenen":[
- {"dauer":2.6,"label":"MCS Lager","hook":"Inventur<br>mit <em>Zettel</em><br>und Kuli?","hg":150},
- {"dauer":3.6,"label":"So geht's heute","hook":"Scannen.<br><em>Fertig.</em>","hg":160,"chips":["Handscanner, Smartphone oder Tablet","Bucht direkt in büro+","Wareneingang inklusive"]},
- {"dauer":3.2,"label":"Preis","hook":"200 € / Monat<br><em>pauschal.</em>","hg":120,"text":"Je Mandant und Standort – egal wie viele Geräte."}
-]}
+{
+ "typ": "reel",
+ "dark": true,
+ "szenen": [
+  {
+   "dauer": 2.6,
+   "label": "MCS Lager",
+   "hook": "Inventur<br>mit <em>Zettel</em><br>und Kuli?",
+   "hg": 150
+  },
+  {
+   "dauer": 3.6,
+   "label": "So geht's heute",
+   "hook": "Scannen.<br><em>Fertig.</em>",
+   "hg": 160,
+   "chips": [
+    "Handscanner, Smartphone oder Tablet",
+    "Bucht direkt in büro+",
+    "Wareneingang inklusive"
+   ]
+  },
+  {
+   "dauer": 3.2,
+   "label": "Für wen",
+   "hook": "Lager, das<br><em>mitzieht.</em>",
+   "hg": 140,
+   "text": "Für Betriebe mit microtech büro+, die Bestände in Echtzeit wollen."
+  }
+ ]
+}

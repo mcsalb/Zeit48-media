@@ -1,5 +1,5 @@
 {
- "hinweis": "MCS (Mattes Computersysteme GmbH, Albstadt, seit 1989): microtech büro+ für Mittelstand (Maschinenbau, Metallbau, Werkzeugbau, Großhandel, Textil). Sie-Ansprache. Kanäle: LinkedIn + Instagram. Fakten nur von mcs-alb.de; keine Kundennamen ohne Freigabe.",
+ "hinweis": "MCS (Mattes Computersysteme GmbH, Albstadt, seit 1989): microtech büro+ für Mittelstand (Maschinenbau, Metallbau, Werkzeugbau, Großhandel, Textil). Sie-Ansprache. Kanäle: LinkedIn + Instagram. Fakten nur von mcs-alb.de; keine Kundennamen ohne Freigabe. KEINE PREISE: niemals Preise, Kosten, Stundensätze oder Monatsbeträge unserer Produkte/Leistungen nennen.",
  "formate": {
   "di": "karussell · büro+-Tipp oder Pflichten in büro+ (5–7 Folien; LinkedIn als PDF-Dokument)",
   "do": "wechselnd: reel (Produkt in Aktion) / bild (Projekt vorher-nachher, Team, Zahl)"
@@ -19,7 +19,7 @@
   },
   {
    "id": "mcs-lager",
-   "titel": "MCS Lager: Scannen, Buchen, Inventur auf Handgerät/Smartphone/Tablet; 200 €/Monat je Mandant & Standort, Einrichtung 1.440 €",
+   "titel": "MCS Lager: Scannen, Buchen, Inventur auf Handgerät/Smartphone/Tablet",
    "saeule": "produkte",
    "werbung": ""
   },
@@ -31,7 +31,7 @@
   },
   {
    "id": "mcs-flow",
-   "titel": "MCS Flow: Tickets, Zeiten, Projekte, ab 19 € pro Nutzer/Monat, Hosting in DE, optional an büro+",
+   "titel": "MCS Flow: Tickets, Zeiten, Projekte, Hosting in DE, optional an büro+",
    "saeule": "produkte",
    "werbung": ""
   },
@@ -139,7 +139,7 @@
   },
   {
    "id": "support",
-   "titel": "Support mit 15-Minuten-Takt, Premium im Minutentakt",
+   "titel": "Support: Sie sprechen mit Menschen, die Ihr System kennen",
    "saeule": "menschen",
    "werbung": ""
   }
