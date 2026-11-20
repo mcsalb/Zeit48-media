@@ -1,0 +1,82 @@
+{
+ "fuss": "Keine Steuerberatung · Stand: November 2026",
+ "folien": [
+  {
+   "label": "PFLICHTEN & FRISTEN",
+   "hook": "E‑RECHNUNG:<br>AB 1.1.2027<br><em>WIRD'S ERNST.</em>",
+   "hg": 112,
+   "text": "Was für deinen Betrieb gilt – in 5 Folien. <b>Speichern lohnt sich.</b>",
+   "note": "wisch → "
+  },
+  {
+   "label": "ZUERST DAS WICHTIGSTE",
+   "hook": "PDF IST<br><em>KEINE</em><br>E‑RECHNUNG.",
+   "hg": 106,
+   "vs": [
+    {
+     "l": "SONSTIGE RECHNUNG",
+     "t": "Papier, Scan oder PDF per Mail – auch wenn sie am Computer erstellt wurde."
+    },
+    {
+     "l": "E-RECHNUNG",
+     "gut": true,
+     "t": "Strukturierte Daten nach EN 16931, z. B. <b>XRechnung</b> oder <b>ZUGFeRD</b>. Maschinenlesbar."
+    }
+   ]
+  },
+  {
+   "label": "DER ZEITPLAN",
+   "hook": "3 STUFEN.",
+   "hg": 120,
+   "tl": [
+    {
+     "y": "SEIT 2025",
+     "d": "<b>Empfangen</b> müssen alle Unternehmen können – ohne Übergangsfrist."
+    },
+    {
+     "y": "AB 2027",
+     "hot": true,
+     "d": "<b>Ausstellen</b> ist Pflicht, wenn dein Gesamtumsatz 2026 über 800.000 € lag."
+    },
+    {
+     "y": "AB 2028",
+     "d": "<b>Ausstellen</b> ist Pflicht für alle – bei Rechnungen an Firmen im Inland."
+    }
+   ]
+  },
+  {
+   "label": "NICHT BETROFFEN",
+   "hook": "DIE<br><em>AUSNAHMEN.</em>",
+   "hg": 120,
+   "x": [
+    "Kleinbetragsrechnungen bis 250 € brutto",
+    "Fahrausweise",
+    "Rechnungen an Privatkunden",
+    "Rechnungen an Kunden im Ausland",
+    "Kleinunternehmer beim Ausstellen – <b>empfangen</b> müssen auch sie"
+   ]
+  },
+  {
+   "label": "DEINE CHECKLISTE",
+   "hook": "DAS SOLLTEST<br>DU <em>JETZT</em> TUN.",
+   "hg": 104,
+   "ck": [
+    "Umsatz 2026 prüfen: über 800.000 €?",
+    "Testen: Kann dein Postfach oder ERP eine XRechnung lesen?",
+    "Rechnungsprogramm auf ZUGFeRD oder XRechnung umstellen",
+    "Ablage GoBD-konform klären",
+    "Steuerberater fragen, was für dich gilt"
+   ]
+  },
+  {
+   "dark": true,
+   "mitte": true,
+   "label": "CHEFSACHE48",
+   "hook": "SPEICHERN.<br><em>WEITER­LEITEN.</em>",
+   "hg": 116,
+   "text": "Du arbeitest mit <b>microtech büro+</b>? Wir von MCS aus Albstadt richten dir die E-Rechnung ein. Link in Bio.",
+   "note": "Folgen für mehr Chef-Wissen ✓"
+  }
+ ],
+ "typ": "karussell"
+}

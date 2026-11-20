@@ -1,0 +1,14 @@
+@font-face{font-family:GE;src:url(fonts/geist-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:GE;src:url(fonts/geist-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:GE;src:url(fonts/geist-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:GE;src:url(fonts/geist-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:GE;src:url(fonts/geist-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:JB;src:url(fonts/jetbrains-mono-latin-500-normal.woff2);font-weight:500}
+:root{--bg:#F2EFE9;--head:#1C1C1E;--body:#3A3A3C;--muted:#8A8784;--accent:#D02F2D;--accent-bg:none;--accent-fill:currentColor;--label:#B32422;--notec:#B32422;--neg:#D02F2D;--card:#fff;--line:rgba(28,28,30,.18);
+--dbg:#1C1C1E;--dhead:#F2EFE9;--dbody:#D8D4CE;--dlabel:#F05A57;--daccent:#F05A57;
+--fh:GE;--wh:700;--lhh:1.02;--lsh:-2.5px;--tth:none;--fb:GE;--fl:JB;--wl:500;--lsl:4px;--fn:GE;--wn:600;--sn:34px;--rn:0deg;--rbox:6px;--rcard:14px;--padl:96px}
+.f:before{content:"";position:absolute;left:0;top:0;width:14px;height:100%;background:#D02F2D}
+.f.dark:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 10%,rgba(208,47,45,.18),transparent 50%)}
+.wm{display:flex;align-items:center;gap:16px;font-family:GE;font-weight:800;font-size:30px;letter-spacing:4px}
+.wm span{display:inline-block;background:#D02F2D;color:#fff;padding:4px 12px;border-radius:4px;letter-spacing:2px}
+.wm small{font-family:JB;font-weight:500;font-size:18px;letter-spacing:3px;opacity:.6}

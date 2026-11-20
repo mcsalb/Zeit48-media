@@ -1,0 +1,13 @@
+{
+ "label": "TEAM · URLAUB",
+ "hook": "RESTURLAUB<br>VERFÄLLT?<br><em>NICHT VON SELBST.</em>",
+ "hg": 104,
+ "text": "Er verfällt in der Regel nur, wenn du deine Leute <b>rechtzeitig und konkret</b> auf Resturlaub und Verfall hingewiesen hast.",
+ "ck": [
+  "Resturlaub je Mitarbeiter prüfen",
+  "Schriftlich hinweisen: wie viele Tage, bis wann – sonst Verfall",
+  "Hinweis ablegen. Du musst ihn im Streit nachweisen."
+ ],
+ "fuss": "Keine Rechtsberatung · BAG 19.02.2019, 9 AZR 423/16",
+ "typ": "bild"
+}

@@ -1,0 +1,57 @@
+/* Gemeinsames Layout für Chefsache48, MCS, M-Consult. Farben/Schriften kommen aus brands/<marke>/brand.css (Variablen). */
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#777}
+.f{position:relative;overflow:hidden;background:var(--bg);color:var(--head)}
+.f.dark{background:var(--dbg);color:var(--dhead)}
+.top{position:absolute;left:var(--padl);right:90px;top:80px;display:flex;justify-content:space-between;align-items:center;z-index:2}
+.top i{font-style:normal;font-family:var(--fb);font-weight:600;font-size:24px;opacity:.55;letter-spacing:3px}
+.c{position:absolute;left:var(--padl);right:90px;top:190px;bottom:150px;display:flex;flex-direction:column;z-index:2}
+.label{font-family:var(--fl);font-weight:var(--wl);font-size:26px;letter-spacing:var(--lsl);text-transform:uppercase;color:var(--label);margin-bottom:26px}
+.dark .label{color:var(--dlabel)}
+.hook{font-family:var(--fh);font-weight:var(--wh);line-height:var(--lhh);letter-spacing:var(--lsh);text-transform:var(--tth)}
+.hook em{font-style:normal;color:var(--accent);background:var(--accent-bg);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:var(--accent-fill)}
+.dark .hook em{color:var(--daccent)}
+.text{font-family:var(--fb);font-size:38px;line-height:1.36;color:var(--body);margin-top:34px}
+.dark .text{color:var(--dbody)}
+.text b{font-weight:600;color:var(--head)}.dark .text b{color:var(--dhead)}
+.foot{position:absolute;left:var(--padl);right:90px;bottom:62px;display:flex;justify-content:space-between;font-family:var(--fb);font-size:22px;opacity:.6;z-index:2;color:var(--body)}
+.dark .foot{color:var(--dbody)}
+.note{font-family:var(--fn);font-weight:var(--wn);color:var(--notec);font-size:var(--sn);transform:rotate(var(--rn));margin-top:30px}
+.dark .note{color:var(--daccent)}
+.tl{margin-top:40px;position:relative;padding-left:70px}
+.tl:before{content:"";position:absolute;left:22px;top:10px;bottom:10px;width:6px;background:var(--head);border-radius:3px}
+.dark .tl:before{background:var(--dhead)}
+.tl .p{position:relative;margin-bottom:46px}
+.tl .p:before{content:"";position:absolute;left:-62px;top:6px;width:30px;height:30px;border-radius:50%;background:var(--bg);border:6px solid var(--head)}
+.tl .p.hot:before{background:var(--accent);border-color:var(--accent)}
+.tl .y{font-family:var(--fh);font-weight:var(--wh);font-size:56px;line-height:1}
+.tl .p.hot .y{color:var(--accent)}
+.tl .d{font-family:var(--fb);font-size:34px;line-height:1.3;margin-top:8px;color:var(--body)}
+.dark .tl .d{color:var(--dbody)}
+.ck,.x{display:flex;gap:26px;align-items:flex-start;font-family:var(--fb);font-size:36px;line-height:1.3;margin-bottom:28px;color:var(--body)}
+.dark .ck,.dark .x{color:var(--dbody)}
+.ck .b{flex:0 0 52px;height:52px;border:4px solid var(--head);border-radius:var(--rbox);display:flex;align-items:center;justify-content:center}
+.dark .ck .b{border-color:var(--dhead)}
+.x .m{font-family:var(--fh);font-weight:var(--wh);color:var(--neg);font-size:40px;flex:0 0 40px}
+.vs{border-radius:var(--rcard);padding:30px 34px;margin-top:28px;font-family:var(--fb);font-size:36px;line-height:1.32;color:var(--body)}
+.vs.gut{background:var(--card);border:3px solid var(--accent)}
+.vs.schlecht{border:3px dashed var(--line)}
+.vs .label{margin-bottom:10px}
+.vs.schlecht .label{color:var(--muted)}
+.vs.gut .label{color:var(--accent)}
+.bild{margin-top:36px;border-radius:var(--rcard);overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.bild img{display:block;width:100%}
+.chip{display:inline-flex;align-items:center;gap:14px;padding:16px 26px;border-radius:999px;font-family:var(--fb);font-size:30px;font-weight:600;margin:0 14px 16px 0;background:var(--card);border:2px solid var(--line);color:var(--head)}
+.chip i{width:14px;height:14px;border-radius:50%;background:var(--accent);display:block}
+/* Reel */
+.sz{position:absolute;left:var(--padl);right:90px;top:340px;bottom:430px;display:flex;flex-direction:column;justify-content:center;z-index:2}
+.sz .label{font-size:30px}
+.sz .text{font-size:44px;line-height:1.3;max-width:840px}
+.row{display:flex;align-items:baseline;justify-content:space-between;font-family:var(--fb);font-size:38px;padding:18px 0;border-bottom:2px dashed var(--line);color:var(--body)}
+.row .v{font-family:var(--fh);font-weight:var(--wh);font-size:42px;color:var(--head)}
+.row .n{font-family:var(--fn);font-weight:var(--wn);font-size:32px;color:var(--notec);display:block;margin-top:2px}
+.sum{display:flex;justify-content:space-between;align-items:center;margin-top:26px;font-family:var(--fh);font-weight:var(--wh);font-size:60px}
+.ring{position:relative;padding:4px 22px;margin-right:40px}
+.ring svg{position:absolute;left:-26px;top:-24px;overflow:visible}
+.bar{position:absolute;left:0;top:0;height:10px;background:var(--accent);z-index:3}
+.rtop{position:absolute;left:var(--padl);top:270px;z-index:2}

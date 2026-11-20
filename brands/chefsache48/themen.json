@@ -1,0 +1,207 @@
+{
+ "hinweis": "Chefsache48: Wissen für Inhaber kleiner Betriebe (Handwerk, Werkstatt, Handel, Fertigung, 5–50 MA). Du-Ansprache. Regel: höchstens 1 von 5 Posts mit Werbung (Feld werbung = zeit48 oder mcs zeigt, wo eine sanfte Erwähnung passt). Jede Nutzung in historie eintragen, ein Thema frühestens nach 6 Wochen wieder.",
+ "formate": {
+  "mo": "reel · Der teuerste Fehler (Geld/Kalkulation)",
+  "di": "karussell · Checkliste zum Speichern (5–7 Folien)",
+  "mi": "bild · Chef-Wissen kompakt (Team/Personal)",
+  "do": "reel · Rechenbeispiel oder Kurz-Tipp",
+  "fr": "bild · Pflichten & Fristen kompakt",
+  "sa": "karussell · Büro digital / Abläufe",
+  "so": "story · Chef-Frage der Woche (Umfrage-Sticker, Ralf setzt ihn)"
+ },
+ "themen": [
+  {
+   "id": "stundensatz",
+   "titel": "Stundensatz richtig kalkulieren (Beispielrechnung)",
+   "saeule": "geld",
+   "werbung": ""
+  },
+  {
+   "id": "angebot-nachfassen",
+   "titel": "Angebote nachfassen: wann und wie",
+   "saeule": "geld",
+   "werbung": ""
+  },
+  {
+   "id": "zahlungsziel",
+   "titel": "Zahlungsziele und Mahnwesen ohne Streit",
+   "saeule": "geld",
+   "werbung": ""
+  },
+  {
+   "id": "liquiditaet",
+   "titel": "Liquiditätsplanung in 15 Minuten pro Woche",
+   "saeule": "geld",
+   "werbung": ""
+  },
+  {
+   "id": "nachkalkulation",
+   "titel": "Nachkalkulation: Hat sich der Auftrag gelohnt?",
+   "saeule": "geld",
+   "werbung": "zeit48"
+  },
+  {
+   "id": "materialaufschlag",
+   "titel": "Material richtig aufschlagen",
+   "saeule": "geld",
+   "werbung": ""
+  },
+  {
+   "id": "unproduktive-zeit",
+   "titel": "Unproduktive Stunden sichtbar machen",
+   "saeule": "geld",
+   "werbung": "zeit48"
+  },
+  {
+   "id": "skonto",
+   "titel": "Skonto: lohnt es sich?",
+   "saeule": "geld",
+   "werbung": ""
+  },
+  {
+   "id": "mitarbeiter-halten",
+   "titel": "Mitarbeiter halten ohne Gehaltsspirale",
+   "saeule": "team",
+   "werbung": ""
+  },
+  {
+   "id": "azubi",
+   "titel": "Azubis gewinnen und halten",
+   "saeule": "team",
+   "werbung": ""
+  },
+  {
+   "id": "resturlaub",
+   "titel": "Resturlaub und Hinweispflicht (BAG 2019)",
+   "saeule": "team",
+   "werbung": "zeit48"
+  },
+  {
+   "id": "ueberstunden",
+   "titel": "Überstunden fair regeln",
+   "saeule": "team",
+   "werbung": "zeit48"
+  },
+  {
+   "id": "zeiterfassung-pflicht",
+   "titel": "Arbeitszeiterfassung: Pflicht seit BAG 2022 – Stand prüfen",
+   "saeule": "team",
+   "werbung": "zeit48"
+  },
+  {
+   "id": "mitarbeitergespraech",
+   "titel": "Mitarbeitergespräch in 20 Minuten",
+   "saeule": "team",
+   "werbung": ""
+  },
+  {
+   "id": "einarbeitung",
+   "titel": "Einarbeitung neuer Leute: Checkliste",
+   "saeule": "team",
+   "werbung": ""
+  },
+  {
+   "id": "krankmeldung-eau",
+   "titel": "Krankmeldung: eAU abrufen statt Zettel",
+   "saeule": "team",
+   "werbung": ""
+  },
+  {
+   "id": "erechnung",
+   "titel": "E-Rechnung 2025/2027/2028",
+   "saeule": "pflichten",
+   "werbung": "mcs"
+  },
+  {
+   "id": "gobd",
+   "titel": "GoBD: Belege richtig aufbewahren",
+   "saeule": "pflichten",
+   "werbung": "mcs"
+  },
+  {
+   "id": "aufbewahrungsfristen",
+   "titel": "Aufbewahrungsfristen 6/8/10 Jahre – Stand prüfen",
+   "saeule": "pflichten",
+   "werbung": "mcs"
+  },
+  {
+   "id": "kassennachschau",
+   "titel": "Kassen-Nachschau: was der Prüfer sehen will",
+   "saeule": "pflichten",
+   "werbung": ""
+  },
+  {
+   "id": "datenschutz-betrieb",
+   "titel": "Datenschutz im kleinen Betrieb: 5 Basics",
+   "saeule": "pflichten",
+   "werbung": ""
+  },
+  {
+   "id": "jahreswechsel",
+   "titel": "Checkliste Jahreswechsel im Büro",
+   "saeule": "pflichten",
+   "werbung": ""
+  },
+  {
+   "id": "ablage-digital",
+   "titel": "Papierablage digitalisieren",
+   "saeule": "digital",
+   "werbung": "mcs"
+  },
+  {
+   "id": "erp-wann",
+   "titel": "Ab wann lohnt sich ein ERP?",
+   "saeule": "digital",
+   "werbung": "mcs"
+  },
+  {
+   "id": "lager-inventur",
+   "titel": "Inventur ohne Zettelchaos",
+   "saeule": "digital",
+   "werbung": "mcs"
+  },
+  {
+   "id": "vorlagen",
+   "titel": "Textbausteine und Vorlagen sparen Stunden",
+   "saeule": "digital",
+   "werbung": ""
+  },
+  {
+   "id": "telefon",
+   "titel": "Telefon und Tickets: nichts geht verloren",
+   "saeule": "digital",
+   "werbung": "mcs"
+  },
+  {
+   "id": "excel-grenzen",
+   "titel": "Wann Excel nicht mehr reicht",
+   "saeule": "digital",
+   "werbung": ""
+  },
+  {
+   "id": "delegieren",
+   "titel": "Delegieren: was nur der Chef tun muss",
+   "saeule": "alltag",
+   "werbung": ""
+  },
+  {
+   "id": "wochenplanung",
+   "titel": "Wochenplanung am Freitag",
+   "saeule": "alltag",
+   "werbung": ""
+  },
+  {
+   "id": "nein-sagen",
+   "titel": "Nein zu schlechten Aufträgen",
+   "saeule": "alltag",
+   "werbung": ""
+  },
+  {
+   "id": "urlaub-chef",
+   "titel": "Wie der Chef selbst Urlaub machen kann",
+   "saeule": "alltag",
+   "werbung": ""
+  }
+ ],
+ "historie": []
+}

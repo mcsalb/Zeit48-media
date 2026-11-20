@@ -1,0 +1,17 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"><script>
+const B=new URLSearchParams(location.search).get('b');document.write(`<link rel="stylesheet" href="../${B}/brand.css"><script src="../${B}/brand.js"><\/script>`)</script><script src="bausteine.js"></script>
+<style>#f{width:1080px;height:1920px}</style></head><body><div id="f" class="f"></div>
+<script>
+let S,T;
+window.setze=s=>{S=s;S.szenen=s.szenen.slice();if(s.abschluss!==false)S.szenen.push({dauer:3.2,ende:true});let t=0;for(const x of S.szenen){x.t0=t;t+=x.dauer}T=t;document.getElementById('f').className='f '+(s.dark?'dark':'');return t};
+window.render=t=>{
+ let sc=S.szenen[S.szenen.length-1];for(const x of S.szenen)if(t>=x.t0&&t<x.t0+x.dauer){sc=x;break}
+ const lt=t-sc.t0,last=sc===S.szenen[S.szenen.length-1],out=last?1:1-E((lt-(sc.dauer-.35))/.35);
+ const n=Math.max(1,(sc.rechnung?sc.rechnung.rows.length+1:(sc.ck||sc.x||sc.chips||sc.tl||sc.vs||[1]).length));
+ const span=Math.max(.6,sc.dauer-1.4);
+ const q=i=>{let d;if(i===-3)d=0;else if(i===-2)d=.12;else if(i===-1)d=.45;else if(i===99)d=Math.min(.9,sc.dauer-1);else d=.6+span*(i/n);return E((lt-d)/.45)*out};
+ const inner=sc.ende?`<div style="text-align:center;opacity:${q(-3)}">${BRAND.ende()}</div>`:body(sc,q);
+ document.getElementById('f').innerHTML=`${sc.ende?'':`<div class="rtop">${BRAND.top()}</div>`}<div class="sz">${inner}</div>${S.nobar?'':`<div class="bar" style="width:${t/T*1080}px"></div>`}`;
+};
+window.fontsOk=async()=>{for(const x of BRAND.fonts)await document.fonts.load(x);await document.fonts.ready};
+</script></body></html>

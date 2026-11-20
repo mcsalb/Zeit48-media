@@ -1,0 +1,57 @@
+{
+ "szenen": [
+  {
+   "dauer": 2.8,
+   "label": "DER TEUERSTE FEHLER",
+   "hook": "20 € LOHN.<br>WAS KOSTET<br><em>DIE STUNDE?</em>",
+   "hg": 140
+  },
+  {
+   "dauer": 3.2,
+   "label": "DIE TYPISCHE ANTWORT",
+   "hook": "„NA, SO<br>30 €.“",
+   "hg": 170,
+   "text": "Damit legen viele Betriebe bei jedem Auftrag drauf."
+  },
+  {
+   "dauer": 8.0,
+   "label": "BEISPIELRECHNUNG",
+   "rechnung": {
+    "rows": [
+     {
+      "t": "Lohn pro Stunde",
+      "v": "20,00 €"
+     },
+     {
+      "t": "+ Lohnnebenkosten (z. B. 25 %)",
+      "v": "25,00 €"
+     },
+     {
+      "t": "÷ nur 75 % beim Kunden",
+      "n": "Urlaub, krank, Fahrt, Büro …",
+      "v": "33,33 €"
+     },
+     {
+      "t": "+ Gemeinkosten (z. B. 20 €)",
+      "n": "Werkstatt, Auto, Versicherung",
+      "v": "53,33 €"
+     },
+     {
+      "t": "+ Gewinn & Risiko (10 %)",
+      "v": "58,67 €"
+     }
+    ],
+    "sumLabel": "Stundensatz",
+    "sum": "≈ 59 €"
+   }
+  },
+  {
+   "dauer": 3.4,
+   "label": "HEISST",
+   "hook": "FAST<br><em>3 × LOHN.</em>",
+   "hg": 180,
+   "text": "Deine Zahlen sind anders. Rechne sie einmal sauber durch."
+  }
+ ],
+ "typ": "reel"
+}

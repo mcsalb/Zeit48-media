@@ -1,0 +1,11 @@
+@font-face{font-family:AR;src:url(fonts/archivo-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:AR;src:url(fonts/archivo-latin-900-normal.woff2);font-weight:900}
+@font-face{font-family:CV;src:url(fonts/caveat-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:IN;src:url(fonts/inter-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:IN;src:url(fonts/inter-latin-600-normal.woff2);font-weight:600}
+:root{--bg:#F4EFE4;--head:#1E3B2C;--body:#1B1B18;--muted:#8C8576;--accent:#E08414;--accent-bg:none;--accent-fill:currentColor;--label:#D2462E;--notec:#D2462E;--neg:#D2462E;--card:#fff;--line:#D9D1BF;
+--dbg:#1E3B2C;--dhead:#F4EFE4;--dbody:#E9E3D4;--dlabel:#F2A33A;--daccent:#F2A33A;
+--fh:AR;--wh:900;--lhh:.93;--lsh:-3px;--tth:uppercase;--fb:IN;--fl:AR;--wl:800;--lsl:5px;--fn:CV;--wn:700;--sn:46px;--rn:-2.5deg;--rbox:10px;--rcard:20px;--padl:150px}
+.f:not(.dark):before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(180deg,transparent 0 63px,rgba(30,59,44,.07) 63px 65px)}
+.f:not(.dark):after{content:"";position:absolute;left:110px;top:0;bottom:0;width:3px;background:rgba(210,70,46,.25)}
+.wm{font-family:AR;font-weight:900;font-size:28px;letter-spacing:2px}.wm b{color:#E08414}.dark .wm b{color:#F2A33A}

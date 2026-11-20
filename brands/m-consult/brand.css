@@ -1,0 +1,17 @@
+@font-face{font-family:CP;src:url(fonts/chakra-petch-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:CP;src:url(fonts/chakra-petch-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:CP;src:url(fonts/chakra-petch-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:IS;src:url(fonts/instrument-sans-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:IS;src:url(fonts/instrument-sans-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:IS;src:url(fonts/instrument-sans-latin-600-normal.woff2);font-weight:600}
+:root{--bg:#110C0E;--head:#F6EFF0;--body:#C8BCBF;--muted:#988C8F;--accent:#FF3131;--accent-bg:linear-gradient(100deg,#FF0000 0%,#FF3131 45%,#FF7171 100%);--accent-fill:transparent;--label:#FF7171;--notec:#FF7171;--neg:#FF3131;--card:#1E1618;--line:rgba(255,226,229,.17);
+--dbg:#F1ECEB;--dhead:#1A1214;--dbody:#463B3E;--dlabel:#C8191E;--daccent:#C8191E;
+--fh:CP;--wh:700;--lhh:.98;--lsh:-1px;--tth:uppercase;--fb:IS;--fl:CP;--wl:600;--lsl:4px;--fn:CP;--wn:600;--sn:36px;--rn:0deg;--rbox:4px;--rcard:6px;--padl:96px}
+.f:before{content:"";position:absolute;inset:0;opacity:.9;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='104' viewBox='0 0 120 104'><polygon points='30,2 90,2 118,52 90,102 30,102 2,52' fill='none' stroke='rgba(255,226,229,0.06)' stroke-width='2'/></svg>");background-size:120px 104px}
+.f:after{content:"";position:absolute;right:-200px;top:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(255,49,49,.22),transparent 60%)}
+.f.dark:before,.f.dark:after{display:none}
+.dark .hook em{-webkit-text-fill-color:#C8191E}
+.wm{display:flex;align-items:center;gap:16px;font-family:CP;font-weight:700;font-size:30px;letter-spacing:3px}
+.wm svg{width:62px;height:37px}
+.wm small{font-family:IS;font-weight:500;font-size:18px;letter-spacing:3px;opacity:.6}
+.ck .b{border-color:#FF3131}

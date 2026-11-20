@@ -1,0 +1,130 @@
+{
+ "hinweis": "M-Consult GmbH (Albstadt): zertifizierter reybex-Partner, ERP-Beratung für Multichannel-/Online-Handel, Großhandel, Produktion, Dienstleister; bundesweit vor Ort/remote. Sie-Ansprache. Kanäle: LinkedIn + Instagram. Slogans: „Alles läuft. Nur nicht zusammen.“ „Ein System. Alles verbunden.“ Herstellerzahlen nur als „laut Reybex“.",
+ "formate": {
+  "mo": "bild oder karussell · Symptome von Systemchaos / ERP-Wechsel-Checkliste",
+  "mi": "wechselnd: reel (reybex in Aktion, KI-Agenten) / karussell (Projekttagebuch, Wissen)"
+ },
+ "themen": [
+  {
+   "id": "alles-laeuft",
+   "titel": "Alles läuft. Nur nicht zusammen. – Symptome",
+   "saeule": "chaos",
+   "werbung": ""
+  },
+  {
+   "id": "ueberverkaeufe",
+   "titel": "Überverkäufe auf Marktplätzen vermeiden",
+   "saeule": "chaos",
+   "werbung": ""
+  },
+  {
+   "id": "stammdaten",
+   "titel": "Stammdaten an einer Stelle pflegen",
+   "saeule": "chaos",
+   "werbung": ""
+  },
+  {
+   "id": "versand",
+   "titel": "Versandlabels automatisch statt von Hand",
+   "saeule": "chaos",
+   "werbung": ""
+  },
+  {
+   "id": "excel-limit",
+   "titel": "Wenn Excel das ERP ist",
+   "saeule": "chaos",
+   "werbung": ""
+  },
+  {
+   "id": "reybex-integrationen",
+   "titel": "reybex: über 100 Integrationen (Shops, Marktplätze, Versand, Zahlung, Finanzen)",
+   "saeule": "reybex",
+   "werbung": ""
+  },
+  {
+   "id": "reybex-lager",
+   "titel": "Lager und Bestände in reybex",
+   "saeule": "reybex",
+   "werbung": ""
+  },
+  {
+   "id": "reybex-userexit",
+   "titel": "Abläufe automatisieren mit User Exits",
+   "saeule": "reybex",
+   "werbung": ""
+  },
+  {
+   "id": "reybex-ki-agent",
+   "titel": "KI-Agent in reybex: täglicher Bericht oder Ereignis-Agent",
+   "saeule": "ki",
+   "werbung": ""
+  },
+  {
+   "id": "ki-belege",
+   "titel": "KI im Handel: was heute schon geht",
+   "saeule": "ki",
+   "werbung": ""
+  },
+  {
+   "id": "partner-award",
+   "titel": "Reybex Partner Award 2025",
+   "saeule": "reybex",
+   "werbung": ""
+  },
+  {
+   "id": "wechsel-checkliste",
+   "titel": "ERP-Wechsel: Checkliste vor dem Start",
+   "saeule": "wechsel",
+   "werbung": ""
+  },
+  {
+   "id": "datenmigration",
+   "titel": "Datenmigration ohne Datenverlust",
+   "saeule": "wechsel",
+   "werbung": ""
+  },
+  {
+   "id": "golive-meilensteine",
+   "titel": "Go-Live in Meilensteinen",
+   "saeule": "wechsel",
+   "werbung": ""
+  },
+  {
+   "id": "weclapp-reybex",
+   "titel": "Umstieg von weclapp (anonymes Projekttagebuch)",
+   "saeule": "wechsel",
+   "werbung": ""
+  },
+  {
+   "id": "erp-auswahl",
+   "titel": "ERP-Auswahl: 5 Fragen, die Sie stellen sollten",
+   "saeule": "wechsel",
+   "werbung": ""
+  },
+  {
+   "id": "kosten-erp",
+   "titel": "Was ein ERP-Projekt wirklich kostet – ohne konkrete Zahlen erfinden",
+   "saeule": "wechsel",
+   "werbung": ""
+  },
+  {
+   "id": "keine-hotline",
+   "titel": "Keine Hotline: Sie sprechen mit Menschen, die Ihr Anliegen kennen",
+   "saeule": "menschen",
+   "werbung": ""
+  },
+  {
+   "id": "erstgespraech",
+   "titel": "Kostenloses 30-Minuten-Erstgespräch",
+   "saeule": "menschen",
+   "werbung": ""
+  },
+  {
+   "id": "erechnung-reybex",
+   "titel": "E-Rechnung ab 2027 mit reybex – Funktionen vorher prüfen",
+   "saeule": "pflichten",
+   "werbung": ""
+  }
+ ],
+ "historie": []
+}
