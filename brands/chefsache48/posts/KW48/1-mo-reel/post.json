@@ -1,0 +1,54 @@
+{
+ "typ": "reel",
+ "szenen": [
+  {
+   "dauer": 2.8,
+   "label": "DER TEUERSTE FEHLER",
+   "hook": "2&nbsp;% SKONTO<br>LIEGEN<br><em>LASSEN?</em>",
+   "hg": 140
+  },
+  {
+   "dauer": 3.2,
+   "label": "DIE TYPISCHE AUSREDE",
+   "hook": "„SIND DOCH<br>NUR 2&nbsp;%.“",
+   "hg": 140,
+   "text": "Klingt nach wenig. Ist es aber nicht."
+  },
+  {
+   "dauer": 8.0,
+   "label": "BEISPIELRECHNUNG",
+   "rechnung": {
+    "rows": [
+     {
+      "t": "Rechnung",
+      "n": "Beispiel",
+      "v": "10.000 €"
+     },
+     {
+      "t": "2 % Skonto bei Zahlung in 10 Tagen",
+      "v": "200 €"
+     },
+     {
+      "t": "Dafür zahlst du früher",
+      "n": "statt nach 30 Tagen",
+      "v": "20 Tage"
+     },
+     {
+      "t": "Aufs Jahr gerechnet",
+      "n": "2 ÷ 98 × 360 ÷ 20",
+      "v": "≈ 36,7 %"
+     }
+    ],
+    "sumLabel": "Jahreszins",
+    "sum": "≈ 37 %"
+   }
+  },
+  {
+   "dauer": 3.8,
+   "label": "HEISST",
+   "hook": "SKONTO<br>ZIEHEN<br><em>LOHNT FAST IMMER.</em>",
+   "hg": 130,
+   "text": "Ein Kontokorrentkredit kostet meist deutlich weniger. Prüf deine Konditionen."
+  }
+ ]
+}

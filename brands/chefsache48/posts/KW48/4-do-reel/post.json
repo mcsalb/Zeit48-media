@@ -1,0 +1,48 @@
+{
+ "typ": "reel",
+ "szenen": [
+  {
+   "dauer": 2.8,
+   "label": "KURZ-TIPP",
+   "hook": "1 STUNDE<br>AM TAG<br><em>VERSICKERT?</em>",
+   "hg": 112
+  },
+  {
+   "dauer": 7.0,
+   "label": "BEISPIELRECHNUNG",
+   "rechnung": {
+    "rows": [
+     {
+      "t": "Suchen, Warten, Leerfahrten",
+      "n": "pro Mitarbeiter",
+      "v": "1 h/Tag"
+     },
+     {
+      "t": "× 5 Mitarbeiter",
+      "v": "5 h/Tag"
+     },
+     {
+      "t": "× 220 Arbeitstage",
+      "v": "1.100 h"
+     }
+    ],
+    "sumLabel": "Pro Jahr",
+    "sum": "1.100 h"
+   }
+  },
+  {
+   "dauer": 3.2,
+   "label": "HEISST",
+   "hook": "MEHR ALS<br>EINE <em>HALBE<br>STELLE.</em>",
+   "hg": 130,
+   "text": "Bezahlt, aber keinem Auftrag zugeordnet."
+  },
+  {
+   "dauer": 4.5,
+   "label": "DER TIPP",
+   "hook": "SCHREIB'S<br><em>AUF.</em>",
+   "hg": 140,
+   "text": "Eine Woche lang jede Stunde einem Auftrag oder „intern“ zuordnen. Mit einer Zeiterfassung wie <b>Zeit48</b> geht das per Klick."
+  }
+ ]
+}

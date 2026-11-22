@@ -1,0 +1,59 @@
+{
+ "typ": "karussell",
+ "fuss": "Keine Rechts- oder Steuerberatung · Stand: November 2026",
+ "folien": [
+  {
+   "label": "CHECKLISTE ZUM SPEICHERN",
+   "hook": "JAHRES-<br>WECHSEL:<br><em>6 DINGE</em><br>FÜRS BÜRO.",
+   "hg": 118,
+   "text": "Bis 31.12. erledigen – sonst wird's teuer. <b>Speichern lohnt sich.</b>",
+   "note": "wisch → "
+  },
+  {
+   "label": "1 · OFFENE RECHNUNGEN",
+   "hook": "2023ER<br>FORDERUNGEN<br><em>VERJÄHREN.</em>",
+   "hg": 100,
+   "text": "In der Regel mit Ablauf des <b>31.12.2026</b> (3 Jahre ab Jahresende).",
+   "x": [
+    "Eine normale Mahnung stoppt die Verjährung <b>nicht</b>",
+    "Was hilft: gerichtlicher Mahnbescheid, Klage, Verhandlungen oder ein Anerkenntnis des Kunden"
+   ]
+  },
+  {
+   "label": "2 · LOHN",
+   "hook": "MINDESTLOHN<br>AB 1.1.2027:<br><em>14,60 €.</em>",
+   "hg": 100,
+   "text": "Die Minijob-Grenze steigt von 603 € auf <b>633 €</b> im Monat.",
+   "ck": [
+    "Stundenlöhne unter 14,60 € anpassen",
+    "Minijobber: Stunden × Lohn neu prüfen",
+    "Deine eigenen Stundensätze nachrechnen"
+   ]
+  },
+  {
+   "label": "3 · LAGER",
+   "hook": "INVENTUR<br><em>JETZT</em><br>PLANEN.",
+   "hg": 120,
+   "text": "Wenn du bilanzierst, brauchst du eine Bestandsaufnahme zum Stichtag.",
+   "ck": [
+    "Termin und Zählteams festlegen",
+    "Lager vorher aufräumen",
+    "Zähllisten oder Scanner vorbereiten"
+   ]
+  },
+  {
+   "label": "4–6 · KURZ & WICHTIG",
+   "hook": "DER<br><em>REST.</em>",
+   "hg": 130,
+   "ck": [
+    "Belege 2026 vollständig zum Steuerberater",
+    "Urlaubsplanung 2027 im Team abfragen",
+    "Preise und Angebote für 2027 anpassen",
+    "Aufbewahrung: Was weg darf, zeigen wir am Freitag"
+   ]
+  },
+  {
+   "cta": true
+  }
+ ]
+}

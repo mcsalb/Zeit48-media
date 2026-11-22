@@ -1,0 +1,14 @@
+{
+ "typ": "bild",
+ "label": "TEAM · FÜHRUNG",
+ "hook": "MITARBEITER-<br>GESPRÄCH IN<br><em>20 MINUTEN.</em>",
+ "hg": 104,
+ "text": "Einmal im Jahr, unter vier Augen, ohne Telefon. <b>So teilst du die Zeit auf:</b>",
+ "ck": [
+  "5 Min: Was lief gut? Erst zuhören.",
+  "5 Min: Was nervt oder bremst dich?",
+  "5 Min: Was willst du lernen oder ändern?",
+  "5 Min: 1–2 Ziele + nächster Termin, schriftlich"
+ ],
+ "fuss": ""
+}

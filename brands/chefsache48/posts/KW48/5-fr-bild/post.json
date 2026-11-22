@@ -1,0 +1,23 @@
+{
+ "typ": "bild",
+ "label": "PFLICHTEN & FRISTEN",
+ "hook": "WAS DARF<br>AM 1.1.2027<br><em>WEG?</em>",
+ "hg": 96,
+ "tl": [
+  {
+   "y": "8 JAHRE",
+   "hot": true,
+   "d": "<b>Buchungsbelege</b> wie Rechnungen und Quittungen: bis einschl. 2018"
+  },
+  {
+   "y": "10 JAHRE",
+   "d": "<b>Bücher, Inventare, Jahresabschlüsse:</b> bis einschl. 2016"
+  },
+  {
+   "y": "6 JAHRE",
+   "d": "<b>Geschäftsbriefe</b> wie Angebote und Mails: bis einschl. 2020"
+  }
+ ],
+ "note": "Ausnahme: laufende Prüfung, offener Bescheid!",
+ "fuss": "Keine Steuerberatung · Stand: November 2026"
+}

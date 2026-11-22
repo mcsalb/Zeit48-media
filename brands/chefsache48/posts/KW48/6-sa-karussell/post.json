@@ -1,0 +1,44 @@
+{
+ "typ": "karussell",
+ "fuss": "",
+ "folien": [
+  {
+   "label": "BÜRO DIGITAL",
+   "hook": "5 VORLAGEN,<br>DIE DIR<br><em>STUNDEN</em><br>SPAREN.",
+   "hg": 118,
+   "text": "Einmal sauber schreiben, hundertmal nutzen. <b>Speichern lohnt sich.</b>",
+   "note": "wisch → "
+  },
+  {
+   "label": "1 · ANGEBOT",
+   "hook": "ANGEBOTS-<br><em>BAUSTEINE.</em>",
+   "hg": 120,
+   "text": "Standard-Positionen, Zahlungsbedingungen, was <b>nicht</b> enthalten ist – einmal formulieren, nie wieder neu tippen."
+  },
+  {
+   "label": "2 · NACHFASSEN",
+   "hook": "DIE<br><em>NACHFASS-<br>MAIL.</em>",
+   "hg": 120,
+   "text": "„Haben Sie noch Fragen zu unserem Angebot?“ – fertig im Postfach. Nach 7 Tagen raus, ohne nachzudenken."
+  },
+  {
+   "label": "3 · ZAHLUNG",
+   "hook": "ZAHLUNGS-<br><em>ERINNERUNG.</em>",
+   "hg": 108,
+   "text": "Freundlich, klar, mit Datum. Erste Stufe ohne Drohkulisse – das hält den Kunden und bringt trotzdem Geld."
+  },
+  {
+   "label": "4 + 5 · BAUSTELLE & TEAM",
+   "hook": "UND<br><em>DIESE ZWEI.</em>",
+   "hg": 120,
+   "ck": [
+    "Arbeitsbericht zum Abhaken: Zeit, Material, Unterschrift",
+    "Willkommens-Mail für Neue: erster Tag, Ansprechpartner, was mitbringen"
+   ],
+   "text": "<b>Tipp:</b> Alle Vorlagen in <b>einen</b> Ordner. Wer suchen muss, nutzt sie nicht."
+  },
+  {
+   "cta": true
+  }
+ ]
+}
