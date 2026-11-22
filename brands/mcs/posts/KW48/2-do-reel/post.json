@@ -1,0 +1,47 @@
+{
+ "typ": "reel",
+ "dark": true,
+ "szenen": [
+  {
+   "dauer": 2.8,
+   "label": "WARENEINGANG",
+   "hook": "Lieferschein<br>abtippen?<br><em>Muss nicht sein.</em>",
+   "hg": 130
+  },
+  {
+   "dauer": 4.2,
+   "label": "MIT MCS LAGER",
+   "hook": "Scannen.<br><em>Gebucht.</em>",
+   "hg": 160,
+   "chips": [
+    "Handscanner, Smartphone oder Tablet",
+    "Bucht direkt in microtech büro+",
+    "Bestand sofort aktuell"
+   ]
+  },
+  {
+   "dauer": 4.4,
+   "label": "DER UNTERSCHIED",
+   "vs": [
+    {
+     "l": "Vorher",
+     "t": "Zettel, Abtippen, Tippfehler – der Bestand stimmt erst später"
+    },
+    {
+     "l": "Mit MCS Lager",
+     "t": "Ware scannen, Menge bestätigen, fertig",
+     "gut": true
+    }
+   ],
+   "hook": "Weniger tippen.<br><em>Mehr Überblick.</em>",
+   "hg": 110
+  },
+  {
+   "dauer": 3.6,
+   "label": "AUCH DABEI",
+   "hook": "Inventur<br><em>auf dem Gerät.</em>",
+   "hg": 130,
+   "text": "Scannen, Buchen, Inventur – für Betriebe mit microtech büro+."
+  }
+ ]
+}

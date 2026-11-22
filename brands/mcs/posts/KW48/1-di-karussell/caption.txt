@@ -1,0 +1,15 @@
+Ab 1. Januar 2027 reicht die PDF-Rechnung für viele Mittelständler nicht mehr.
+
+Wer im Vorjahr mehr als 800.000 € Umsatz gemacht hat, muss Rechnungen an deutsche Geschäftskunden dann als E-Rechnung verschicken. Ab 2028 gilt das für alle. Empfangen können muss jedes Unternehmen sie schon seit 2025.
+
+Eine E-Rechnung ist keine PDF im Anhang, sondern ein strukturierter Datensatz nach EN 16931 – zum Beispiel XRechnung oder ZUGFeRD.
+
+Bevor Sie in büro+ umstellen, lohnt ein Blick auf fünf Punkte: Welcher Kunde bekommt welches Format? Ist die Leitweg-ID für öffentliche Auftraggeber hinterlegt? Sind alle Pflichtangaben im Beleg? Passt das Layout? Und wurde eine Testrechnung validiert?
+
+Auf der Eingangsseite gilt: Die XML-Datei ist das Original und muss GoBD-konform aufbewahrt werden.
+
+Wir gehen die Liste gern mit Ihnen in Ihrem büro+ durch. Gespräch vereinbaren: mcs-alb.de
+
+(Hinweis: keine Steuerberatung – bitte Details mit Ihrer Steuerkanzlei abstimmen.)
+
+#ERechnung #microtech #bueroplus #Mittelstand #XRechnung

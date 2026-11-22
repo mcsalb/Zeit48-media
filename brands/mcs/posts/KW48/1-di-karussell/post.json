@@ -1,0 +1,26 @@
+{
+ "typ": "karussell",
+ "titel": "E-Rechnung 2027: Checkliste für büro+",
+ "fuss": "Mattes Computersysteme GmbH · Keine Steuerberatung · Stand: November 2026",
+ "folien": [
+  {"label": "E-RECHNUNG · ZUM SPEICHERN", "hook": "Ab 1.1.2027<br>reicht die PDF<br><em>oft nicht mehr.</em>", "hg": 104, "text": "Für viele Mittelständler endet die Übergangsfrist in wenigen Wochen. <b>Was Sie in büro+ jetzt prüfen sollten.</b>", "note": "wischen →"},
+  {"label": "1 · DIE FRISTEN", "hook": "Drei<br><em>Stichtage.</em>", "hg": 120, "tl": [
+    {"y": "seit 2025", "d": "Alle Unternehmen müssen E-Rechnungen empfangen können"},
+    {"y": "1.1.2027", "d": "Versandpflicht bei Vorjahresumsatz über 800.000 €", "hot": true},
+    {"y": "1.1.2028", "d": "Versandpflicht für alle im inländischen B2B"}]},
+  {"label": "2 · WAS ZÄHLT", "hook": "Was ist eine<br><em>E-Rechnung?</em>", "hg": 104, "vs": [
+    {"l": "Keine E-Rechnung", "t": "PDF per E-Mail, Papier, Scan"},
+    {"l": "E-Rechnung", "t": "Strukturierte Daten nach EN 16931 – z. B. XRechnung oder ZUGFeRD", "gut": true}]},
+  {"label": "3 · AUSGANG PRÜFEN", "hook": "Ihre<br><em>Checkliste.</em>", "hg": 120, "ck": [
+    "Kundenstamm: Wer bekommt XRechnung, wer ZUGFeRD?",
+    "Leitweg-ID für öffentliche Auftraggeber hinterlegen",
+    "Pflichtangaben vollständig: USt-IdNr., Leistungsdatum, Bankdaten",
+    "Rechnungslayout auf das Format abstimmen",
+    "Testrechnung erzeugen und validieren lassen"]},
+  {"label": "4 · EINGANG NICHT VERGESSEN", "hook": "Auch der<br><em>Empfang</em><br>gehört dazu.", "hg": 104, "text": "E-Rechnungen im <b>Originalformat</b> aufbewahren – ein Ausdruck genügt nicht.", "ck": [
+    "Postfach für E-Rechnungen festlegen",
+    "Prüfung und Freigabe regeln",
+    "XML-Datei GoBD-konform archivieren"]},
+  {"cta": true}
+ ]
+}

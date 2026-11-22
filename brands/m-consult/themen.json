@@ -126,5 +126,24 @@
    "werbung": ""
   }
  ],
- "historie": []
+ "historie": [
+  {
+   "datum": "2026-11-23",
+   "tag": "mo",
+   "format": "bild",
+   "thema": "excel-limit",
+   "hook": "Wenn Excel das ERP ist.",
+   "ordner": "brands/m-consult/posts/KW48/1-mo-bild",
+   "kw": 48
+  },
+  {
+   "datum": "2026-11-25",
+   "tag": "mi",
+   "format": "reel",
+   "thema": "reybex-ki-agent",
+   "hook": "Ihr ERP meldet sich morgens.",
+   "ordner": "brands/m-consult/posts/KW48/2-mi-reel",
+   "kw": 48
+  }
+ ]
 }

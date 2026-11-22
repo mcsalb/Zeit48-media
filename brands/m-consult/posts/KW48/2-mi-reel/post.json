@@ -1,0 +1,10 @@
+{
+ "typ": "reel",
+ "dark": true,
+ "szenen": [
+  {"dauer": 2.8, "label": "KI IN REYBEX", "hook": "Ihr ERP<br>meldet sich<br><em>morgens.</em>", "hg": 130},
+  {"dauer": 4.2, "label": "DER TÄGLICHE BERICHT", "hook": "Ein Agent,<br><em>der vorarbeitet.</em>", "hg": 110, "ck": ["Läuft nach Zeitplan, z. B. jeden Morgen", "Fasst Aufträge und offene Punkte zusammen", "Liegt vor dem ersten Kaffee vor"]},
+  {"dauer": 4.2, "label": "DER EREIGNIS-AGENT", "hook": "Reagiert,<br><em>wenn etwas passiert.</em>", "hg": 110, "ck": ["Neuer Auftrag oder neuer Beleg", "Agent prüft und informiert das Team", "Sie entscheiden – nicht die KI"]},
+  {"dauer": 3.6, "label": "UNSER ANSATZ", "hook": "Klein starten.<br><em>Nutzen messen.</em>", "hg": 120, "text": "Wir richten den ersten Agenten mit Ihnen ein – an einem Ablauf, der heute Zeit frisst."}
+ ]
+}

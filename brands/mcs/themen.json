@@ -144,5 +144,24 @@
    "werbung": ""
   }
  ],
- "historie": []
+ "historie": [
+  {
+   "datum": "2026-11-24",
+   "tag": "di",
+   "format": "karussell",
+   "thema": "erechnung-bueroplus",
+   "hook": "Ab 1.1.2027 reicht die PDF oft nicht mehr.",
+   "ordner": "brands/mcs/posts/KW48/1-di-karussell",
+   "kw": 48
+  },
+  {
+   "datum": "2026-11-26",
+   "tag": "do",
+   "format": "reel",
+   "thema": "wareneingang",
+   "hook": "Lieferschein abtippen? Muss nicht sein.",
+   "ordner": "brands/mcs/posts/KW48/2-do-reel",
+   "kw": 48
+  }
+ ]
 }
