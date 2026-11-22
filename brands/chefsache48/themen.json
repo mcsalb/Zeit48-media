@@ -203,5 +203,117 @@
    "werbung": ""
   }
  ],
- "historie": []
+ "historie": [
+  {
+   "datum": "2026-11-18",
+   "kw": 47,
+   "tag": "mi",
+   "format": "reel",
+   "thema": "stundensatz",
+   "hook": "20 € Lohn. Was kostet die Stunde?",
+   "ordner": "brands/chefsache48/posts/KW47/1-mi-reel",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-19",
+   "kw": 47,
+   "tag": "do",
+   "format": "bild",
+   "thema": "resturlaub",
+   "hook": "Resturlaub verfällt? Nicht von selbst.",
+   "ordner": "brands/chefsache48/posts/KW47/2-do-bild",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-21",
+   "kw": 47,
+   "tag": "sa",
+   "format": "karussell",
+   "thema": "erechnung",
+   "hook": "E-Rechnung: Ab 1.1.2027 wird's ernst.",
+   "ordner": "brands/chefsache48/posts/KW47/3-sa-karussell",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-22",
+   "kw": 47,
+   "tag": "so",
+   "format": "story",
+   "thema": "stundensatz",
+   "hook": "Kennst du deinen echten Stundensatz?",
+   "ordner": "brands/chefsache48/posts/KW47/4-so-story",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-23",
+   "kw": 48,
+   "tag": "mo",
+   "format": "reel",
+   "thema": "skonto",
+   "hook": "2 % Skonto liegen lassen?",
+   "ordner": "brands/chefsache48/posts/KW48/1-mo-reel",
+   "musik": "keine (Audio-Katalog: Authorization Error)"
+  },
+  {
+   "datum": "2026-11-24",
+   "kw": 48,
+   "tag": "di",
+   "format": "karussell",
+   "thema": "jahreswechsel",
+   "hook": "Jahreswechsel: 6 Dinge fürs Büro",
+   "ordner": "brands/chefsache48/posts/KW48/2-di-karussell",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-25",
+   "kw": 48,
+   "tag": "mi",
+   "format": "bild",
+   "thema": "mitarbeitergespraech",
+   "hook": "Mitarbeitergespräch in 20 Minuten",
+   "ordner": "brands/chefsache48/posts/KW48/3-mi-bild",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-26",
+   "kw": 48,
+   "tag": "do",
+   "format": "reel",
+   "thema": "unproduktive-zeit",
+   "hook": "1 Stunde am Tag versickert?",
+   "ordner": "brands/chefsache48/posts/KW48/4-do-reel",
+   "musik": "keine (Audio-Katalog: Authorization Error)",
+   "werbung": "zeit48"
+  },
+  {
+   "datum": "2026-11-27",
+   "kw": 48,
+   "tag": "fr",
+   "format": "bild",
+   "thema": "aufbewahrungsfristen",
+   "hook": "Was darf am 1.1.2027 weg?",
+   "ordner": "brands/chefsache48/posts/KW48/5-fr-bild",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-28",
+   "kw": 48,
+   "tag": "sa",
+   "format": "karussell",
+   "thema": "vorlagen",
+   "hook": "5 Vorlagen, die dir Stunden sparen",
+   "ordner": "brands/chefsache48/posts/KW48/6-sa-karussell",
+   "musik": ""
+  },
+  {
+   "datum": "2026-11-29",
+   "kw": 48,
+   "tag": "so",
+   "format": "story",
+   "thema": "skonto",
+   "hook": "Ziehst du bei Lieferanten Skonto?",
+   "ordner": "brands/chefsache48/posts/KW48/7-so-story",
+   "musik": ""
+  }
+ ]
 }
