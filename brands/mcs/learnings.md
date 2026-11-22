@@ -10,3 +10,4 @@ Jeden Sonntag: Metricool-Zahlen der Vorwoche eintragen (Reichweite, Saves, Share
 - Geplant: Di Karussell E-Rechnung 2027 (Pflichten), Do Reel Wareneingang mit MCS Lager (Produkte).
 - Hinweis: WebFetch auf mcs-alb.de lief in diesem Lauf nicht (Freigabe-Timeout) → Produktaussagen nur aus themen.json/Beispielen, bewusst allgemein gehalten.
 - Reel-Vorlage: vs-Blöcke ohne Hook wirken leer, „schlecht“-Box auf dunklem Grund sehr kontrastarm → immer Hook dazu.
+- Instagram-Musik: Audio-Katalog liefert 403 → Reels ohne Musik eingeplant.
