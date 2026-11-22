@@ -392,6 +392,81 @@
     "audioId": "423124700418880",
     "titel": "Good Vibes – Giulio Cercato"
    }
+  },
+  {
+   "datum": "2026-11-23",
+   "kw": 48,
+   "tag": "mo",
+   "format": "reel",
+   "thema": "nachtarbeit",
+   "hook": "Schicht bis 1 Uhr nachts. Nachtarbeit?",
+   "ordner": "posts/KW48/1-mo-reel",
+   "musik": {
+    "audioId": "2477944699150252",
+    "titel": "Peaceful Piano – Dr. Pheel"
+   }
+  },
+  {
+   "datum": "2026-11-24",
+   "kw": 48,
+   "tag": "di",
+   "format": "karussell",
+   "thema": "sonntag-feiertag",
+   "hook": "Sonntags arbeiten?",
+   "ordner": "posts/KW48/2-di-karussell"
+  },
+  {
+   "datum": "2026-11-25",
+   "kw": 48,
+   "tag": "mi",
+   "format": "bild",
+   "thema": "pov-lohnbuero",
+   "hook": "Das Lohnbüro ruft zum 3. Mal an.",
+   "ordner": "posts/KW48/3-mi-bild"
+  },
+  {
+   "datum": "2026-11-26",
+   "kw": 48,
+   "tag": "do",
+   "format": "reel",
+   "thema": "urlaub-antrag",
+   "hook": "Urlaubsantrag noch per Zettel?",
+   "ordner": "posts/KW48/4-do-reel",
+   "musik": {
+    "audioId": "1388161098514399",
+    "titel": "Happy Days – Giulio Cercato"
+   }
+  },
+  {
+   "datum": "2026-11-27",
+   "kw": 48,
+   "tag": "fr",
+   "format": "bild",
+   "thema": "zahl-16",
+   "hook": "16 Bundesländer, 16 Feiertagskalender",
+   "ordner": "posts/KW48/5-fr-bild"
+  },
+  {
+   "datum": "2026-11-28",
+   "kw": 48,
+   "tag": "sa",
+   "format": "karussell",
+   "thema": "checkliste-start",
+   "hook": "In 5 Schritten zur digitalen Zeiterfassung",
+   "ordner": "posts/KW48/6-sa-karussell"
+  },
+  {
+   "datum": "2026-11-29",
+   "kw": 48,
+   "tag": "so",
+   "format": "reel",
+   "thema": "pov-zettel-kaffee",
+   "hook": "Der Stundenzettel hat einen Kaffeefleck.",
+   "ordner": "posts/KW48/7-so-reel",
+   "musik": {
+    "audioId": "302055452405923",
+    "titel": "Me Gusta (Instrumental) – Giulio Cercato"
+   }
   }
  ]
 }
