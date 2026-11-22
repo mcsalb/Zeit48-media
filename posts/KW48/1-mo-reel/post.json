@@ -1,0 +1,8 @@
+{"typ":"reel","theme":"dark","thema":"nachtarbeit","coverZeit":1.0,
+ "szenen":[
+  {"dauer":2.8,"label":"48 SEKUNDEN ARBEITSRECHT","hook":"SCHICHT BIS<br>1 UHR NACHTS.<br><em>NACHTARBEIT?</em>","hookGroesse":135},
+  {"dauer":3.6,"label":"§ 2 ABS. 3 ARBZG","hook":"NACHTZEIT:<br><em>23–6 UHR</em>","hookGroesse":160,"text":"In Bäckereien und Konditoreien: 22 bis 5 Uhr."},
+  {"dauer":5.0,"label":"§ 2 ABS. 4 ARBZG","hook":"MEHR ALS<br><em>2 STUNDEN</em>","hookGroesse":160,"text":"der Nachtzeit müssen es sein. 23 bis 1 Uhr sind genau 2 – also <b>noch keine Nachtarbeit</b> im Sinne des Gesetzes."},
+  {"dauer":4.4,"label":"§ 2 ABS. 5 · § 6 ABS. 5","hook":"48 TAGE<br><em>IM JAHR.</em>","hookGroesse":170,"text":"Wer an mindestens 48 Tagen Nachtarbeit leistet, ist Nachtarbeitnehmer – mit Ausgleich: <b>freie Tage oder Zuschlag.</b>"},
+  {"dauer":3.6,"label":"MIT ZEIT48","hook":"JEDE MINUTE<br><em>ERFASST.</em>","hookGroesse":150,"elStart":0.8,"element":{"type":"chips","items":["Beginn & Ende minutengenau","Stempeln per App oder Browser","Überstunden sofort sichtbar"]}}
+ ]}

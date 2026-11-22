@@ -1,0 +1,7 @@
+{"typ":"reel","theme":"dark","thema":"pov-zettel-kaffee","coverZeit":1.0,
+ "szenen":[
+  {"dauer":2.8,"label":"POV","hook":"DER STUNDEN-<br>ZETTEL HAT EINEN<br><em>KAFFEEFLECK.</em>","hookGroesse":125},
+  {"dauer":4.4,"label":"FREITAG IM BÜRO","elStart":0.3,"element":{"type":"pov","zeilen":[{"wer":"chef","text":"Max, was stand hier am Donnerstag?"},{"wer":"team","name":"MAX","text":"Irgendwas mit 8 … oder 9?"},{"wer":"team","name":"MAX","text":"Der Kaffee weiß es. ☕"}]}},
+  {"dauer":3.0,"label":"SPIELSTAND","hook":"KAFFEE 1<br>ZETTEL <em>0</em>","hookGroesse":190},
+  {"dauer":3.8,"label":"BESSER SO","hook":"STEMPELN<br>STATT <em>KLECKERN.</em>","hookGroesse":150,"elStart":0.8,"element":{"type":"chips","items":["Per App oder Browser","Auch offline","Kaffee bleibt im Becher"]}}
+ ]}

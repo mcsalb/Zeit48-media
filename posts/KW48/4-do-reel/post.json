@@ -1,0 +1,7 @@
+{"typ":"reel","theme":"light","thema":"urlaub-antrag","coverZeit":1.0,
+ "szenen":[
+  {"dauer":2.8,"label":"URLAUB ZUM JAHRESENDE","hook":"URLAUBSANTRAG<br>NOCH PER<br><em>ZETTEL?</em>","hookGroesse":140},
+  {"dauer":4.4,"label":"SO LÄUFT'S OFT","elStart":0.3,"element":{"type":"pov","zeilen":[{"wer":"team","name":"LISA","text":"Chef, kann ich zwischen den Jahren frei?"},{"wer":"chef","text":"Wie viele Tage hast du denn noch?"},{"wer":"team","name":"LISA","text":"Äh … keine Ahnung."}]}},
+  {"dauer":4.2,"label":"MIT ZEIT48","hook":"ANTRAG<br><em>PER KLICK.</em>","hookGroesse":160,"elStart":0.8,"element":{"type":"chips","items":["Urlaubsantrag digital","Genehmigung per Klick","Resturlaub automatisch berechnet"]}},
+  {"dauer":4.0,"label":"FÜRS GANZE TEAM","hook":"WER IST<br>WANN <em>WEG?</em>","hookGroesse":160,"text":"Abwesenheiten als Kalender-Abo – und die Feiertage aller 16 Bundesländer sind schon hinterlegt."}
+ ]}

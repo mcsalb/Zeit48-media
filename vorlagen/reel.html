@@ -28,7 +28,8 @@ window.render = (t) => {
   let sc = S.alle[S.alle.length - 1];
   for (const x of S.alle) if (t >= x.t0 && t < x.t0 + x.dauer) { sc = x; break; }
   const lt = t - sc.t0, out = sc === S.alle[S.alle.length - 1] ? 1 : 1 - Z.ease((lt - (sc.dauer - .35)) / .35);
-  const st = (d) => { const q = fade(lt, d); return `opacity:${q * out};transform:translateY(${(1 - q) * 40}px)`; };
+  const erste = sc === S.alle[0];
+  const st = (d) => { const q = erste ? 1 : fade(lt, d); return `opacity:${q * out};transform:translateY(${(1 - q) * 40}px)`; };
   let html = '';
   if (sc.abschluss) {
     html = `<div class="sz" style="align-items:center;text-align:center">
@@ -41,7 +42,7 @@ window.render = (t) => {
       ${sc.label ? `<div class="label" style="${st(0)}">${sc.label}</div>` : ''}
       ${sc.hook ? `<div class="hook" style="font-size:${sc.hookGroesse || 170}px;${st(.12)}">${sc.hook}</div>` : ''}
       ${sc.text ? `<div class="text" style="${st(.45)}">${sc.text}</div>` : ''}
-      ${sc.element ? `<div class="el-wrap" style="opacity:${fade(lt, .5) * out}">${Z.element(sc.element, th, ep)}</div>` : ''}
+      ${sc.element ? `<div class="el-wrap" style="opacity:${(erste ? 1 : fade(lt, .5)) * out}">${Z.element(sc.element, th, ep)}</div>` : ''}
     </div>`;
   }
   f.innerHTML = html + `<div class="bar" style="width:${t / S.gesamt * 1080}px"></div>`;

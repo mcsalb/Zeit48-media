@@ -1,0 +1,3 @@
+{"typ":"bild","theme":"dark","thema":"pov-lohnbuero","label":"POV · MONATSENDE","hook":"DAS LOHNBÜRO<br>RUFT ZUM<br><em>3. MAL</em> AN.","hookGroesse":130,
+ "element":{"type":"pov","zeilen":[{"wer":"team","name":"LOHNBÜRO","text":"Die Stunden für November fehlen noch."},{"wer":"chef","text":"Kommt gleich! … Wer hat den Zettel von Max?"},{"wer":"team","name":"MAX","text":"Liegt im Transporter. Glaub ich."}]},
+ "fuss":"POV · BÜROALLTAG"}

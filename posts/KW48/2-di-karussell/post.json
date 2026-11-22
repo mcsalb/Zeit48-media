@@ -1,0 +1,10 @@
+{"typ":"karussell","theme":"light","thema":"sonntag-feiertag","fuss":"SONN- & FEIERTAGE · ARBZG",
+ "folien":[
+  {"label":"REGEL SCHRITT FÜR SCHRITT","hook":"SONNTAGS<br><em>ARBEITEN?</em>","hookGroesse":190,"text":"Was das Arbeitszeitgesetz zu Sonn- und Feiertagen sagt – in 4 Schritten. Passend zur Adventszeit."},
+  {"label":"SCHRITT 1 · § 9 ARBZG","hook":"0 BIS<br><em>24 UHR</em>","hookGroesse":190,"text":"An Sonn- und gesetzlichen Feiertagen dürfen Arbeitnehmer grundsätzlich <b>nicht beschäftigt</b> werden."},
+  {"label":"SCHRITT 2 · § 10 ARBZG","hook":"AUSNAHMEN<br><em>GIBT'S.</em>","hookGroesse":170,"text":"Wenn die Arbeit nicht an Werktagen erledigt werden kann – zum Beispiel:","element":{"type":"chips","items":["Not- und Rettungsdienste","Krankenhäuser und Pflege","Gaststätten","Energie- und Wasserversorgung"]}},
+  {"label":"SCHRITT 3 · § 11 ABS. 1","hook":"15","hookGroesse":340,"text":"Sonntage im Jahr müssen <b>mindestens beschäftigungsfrei</b> bleiben – auch dort, wo sonntags gearbeitet wird."},
+  {"label":"SCHRITT 4 · § 11 ABS. 3","hook":"ERSATZ-<br><em>RUHETAG</em>","hookGroesse":170,"text":"Wer sonntags oder an einem Feiertag arbeitet, bekommt einen Ersatzruhetag:","element":{"type":"checkliste","items":["Sonntag → innerhalb von 2 Wochen","Feiertag an einem Werktag → innerhalb von 8 Wochen"]}},
+  {"label":"MIT ZEIT48","hook":"FEIERTAGE<br><em>IM BLICK.</em>","hookGroesse":170,"element":{"type":"chips","items":["Feiertage aller 16 Bundesländer","Stempeln per App oder Browser","Überstunden sofort sichtbar"]}},
+  {"label":"JETZT STARTEN","cta":true}
+ ]}

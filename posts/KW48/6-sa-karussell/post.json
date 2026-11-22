@@ -1,0 +1,10 @@
+{"typ":"karussell","theme":"dark","thema":"checkliste-start","fuss":"CHECKLISTE · DIGITAL STARTEN",
+ "folien":[
+  {"label":"CHECKLISTE","hook":"IN 5 SCHRITTEN<br>ZUR <em>DIGITALEN</em><br>ZEITERFASSUNG","hookGroesse":140,"text":"Speichern, abhaken, loslegen – auch fürs neue Jahr.","element":{"type":"checkliste","items":["Regeln klären","Testen","Stempelweg festlegen","Team mitnehmen","Export klären"]}},
+  {"label":"SCHRITT 1","hook":"REGELN<br><em style=\"display:inline-block;margin-top:22px\">KLÄREN.</em>","hookGroesse":190,"text":"Arbeitszeitmodell, Pausen, Überstunden: Was gilt bei euch? Gibt es einen Betriebsrat, bindest du ihn früh ein."},
+  {"label":"SCHRITT 2","hook":"ERST<br><em>TESTEN.</em>","hookGroesse":190,"text":"Probier das Tool mit ein paar Leuten aus, bevor alle umsteigen. Bei Zeit48 geht das <b>14 Tage kostenlos, ohne Kreditkarte.</b>"},
+  {"label":"SCHRITT 3","hook":"STEMPELWEG<br><em>FESTLEGEN.</em>","hookGroesse":170,"text":"Wie wird gestempelt – im Büro, unterwegs, auf der Baustelle?","element":{"type":"chips","items":["App oder Browser","Auch offline","NFC-Tag oder QR-Code (Plus)"]}},
+  {"label":"SCHRITT 4","hook":"TEAM<br><em>MITNEHMEN.</em>","hookGroesse":190,"text":"Kurz erklären, <b>warum</b> erfasst wird – und einmal gemeinsam ausprobieren. Fragen gleich am Anfang klären."},
+  {"label":"SCHRITT 5","hook":"EXPORT<br><em style=\"display:inline-block;margin-top:22px\">KLÄREN.</em>","hookGroesse":190,"text":"Was braucht dein Lohnbüro – und in welchem Format?","element":{"type":"chips","items":["CSV-Export für jedes Lohnbüro","DATEV-Lohnexport (Plus)"]}},
+  {"label":"JETZT STARTEN","cta":true}
+ ]}
