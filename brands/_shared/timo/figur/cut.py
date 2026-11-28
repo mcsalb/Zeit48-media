@@ -23,6 +23,10 @@ for k in range(1,n+1):
   if k not in border and sizes[k]>400:
     ys,xs=np.where(lab==k)
     if sizes[k]>300 and gold[lab==k].mean()>.8: mask|=lab==k
+topcut=float(sys.argv[6]) if len(sys.argv)>6 else 0
+if topcut:
+  ys=np.arange(a.shape[0])[:,None]*np.ones(a.shape[1])[None,:]
+  mask|=light&(ys<a.shape[0]*topcut)
 fg=~mask
 fg=ndimage.binary_opening(fg,iterations=1);fg=ndimage.binary_fill_holes(fg) if False else fg
 W,H=im.size
