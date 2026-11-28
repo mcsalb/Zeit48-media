@@ -1,4 +1,4 @@
-# Timo-Story-Reels – Konzept (gilt für alle Marken)
+# Timo-Story-Reels – Konzept (nur Chefsache48 und Zeit48)
 
 **Ziel:** Mehr Reichweite und Follower. Reels sollen die ersten 3 s halten und gespeichert/geteilt werden.
 
@@ -20,8 +20,8 @@
 |---|---|---|---|
 | Chefsache48 | Du | #F2A33A / #E08414 / #1E3B2C / #F1ECE2 | `CHEFSACHE<b>48</b>` |
 | Zeit48 | Du | #D4AF37 / #866719 / #121212 / #F4F3F0 | `ZEIT<b>48</b>` |
-| MCS | Sie | #D02F2D / #B32422 / #1C1C1E / #F2EFE9 | `MCS` (Ende: `"logo":"../../mcs/assets/logo.svg"`) |
-| M-Consult | Sie | #FF3131 / #FF7171 / #110C0E / #F3EEEF | `M-CONSULT` |
+
+MCS und M-Consult nutzen Timo **nicht** (eigene Vorlagen in brands/mcs, brands/m-consult).
 
 ## Regeln
 - Keine Preise unserer Produkte. Rechenbeispiele als „Beispiel“ kennzeichnen.
