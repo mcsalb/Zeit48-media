@@ -1,0 +1,138 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:GE;src:url(../fonts/geist-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:GE;src:url(../fonts/geist-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:GE;src:url(../fonts/geist-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:GE;src:url(../fonts/geist-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:JB;src:url(../fonts/jetbrains-mono-latin-500-normal.woff2);font-weight:500}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#888;font-family:GE;color:#1C1C1E}
+.m{position:relative;width:1680px;height:1120px;overflow:hidden;background:linear-gradient(135deg,#F2EFE9,#E6E1D8);margin-bottom:20px}
+.m.dk{background:radial-gradient(circle at 80% 15%,rgba(208,47,45,.25),transparent 55%),#1C1C1E}
+.bsp{position:absolute;right:28px;bottom:22px;font-family:JB;font-size:22px;color:#8A8784;letter-spacing:2px}
+.dk .bsp{color:#77736E}
+.phone{position:absolute;width:520px;height:1040px;border-radius:70px;background:#111;padding:18px;box-shadow:0 40px 80px rgba(0,0,0,.35)}
+.scr{width:100%;height:100%;border-radius:54px;background:#F7F6F3;overflow:hidden;position:relative}
+.notch{position:absolute;left:50%;top:14px;width:150px;height:36px;margin-left:-75px;background:#111;border-radius:20px;z-index:3}
+.appbar{background:#D02F2D;color:#fff;padding:78px 34px 26px}
+.appbar small{font-family:JB;font-size:20px;letter-spacing:3px;opacity:.85;display:block}
+.appbar b{font-size:40px;font-weight:700;display:block;margin-top:6px}
+.c{background:#fff;border-radius:22px;box-shadow:0 6px 20px rgba(0,0,0,.08);padding:24px 26px}
+.mono{font-family:JB}
+.btn{border-radius:18px;padding:24px;text-align:center;font-weight:700;font-size:32px}
+.float{position:absolute;background:#fff;border-radius:22px;box-shadow:0 24px 50px rgba(0,0,0,.22);padding:26px 30px}
+.ok{display:inline-flex;width:44px;height:44px;border-radius:50%;background:#2E9D5B;color:#fff;align-items:center;justify-content:center;font-weight:700;font-size:26px;margin-right:14px;vertical-align:middle}
+.win{position:absolute;background:#fff;border-radius:18px;box-shadow:0 40px 80px rgba(0,0,0,.3);overflow:hidden}
+.wbar{height:58px;background:#ECEAE6;display:flex;align-items:center;padding:0 22px;gap:10px;border-bottom:1px solid #DDD8D0}
+.wbar i{width:16px;height:16px;border-radius:50%;background:#D5D0C8;display:block}
+.wbar span{margin-left:20px;font-family:JB;font-size:19px;color:#6B6862}
+.tag{display:inline-block;font-family:JB;font-size:17px;padding:5px 12px;border-radius:8px;letter-spacing:1px}
+table{border-collapse:collapse;width:100%}td,th{padding:16px 18px;text-align:left;font-size:24px;border-bottom:1px solid #EEEAE4}th{font-family:JB;font-size:17px;letter-spacing:2px;color:#8A8784;font-weight:500}
+</style></head><body>
+
+<!-- 1 MCS Lager Wareneingang -->
+<div class="m" id="lager-scan">
+ <div class="phone" style="left:200px;top:40px;transform:rotate(-4deg)"><div class="scr"><div class="notch"></div>
+  <div class="appbar"><small>MCS LAGER · WARENEINGANG</small><b>Bestellung B-24117</b></div>
+  <div style="padding:26px">
+   <div style="height:190px;border-radius:22px;background:#2A2A2C;position:relative;overflow:hidden">
+    <div style="position:absolute;left:60px;right:60px;top:50px;height:90px;background:repeating-linear-gradient(90deg,#fff 0 6px,transparent 6px 10px,#fff 10px 13px,transparent 13px 20px)"></div>
+    <div style="position:absolute;left:30px;right:30px;top:94px;height:4px;background:#FF4A47;box-shadow:0 0 18px #FF4A47"></div>
+    <div class="mono" style="position:absolute;left:0;right:0;bottom:12px;text-align:center;color:#ccc;font-size:18px">4006381 333931</div></div>
+   <div class="c" style="margin-top:22px"><div class="mono" style="font-size:18px;color:#8A8784">ART.-NR. 100-4508</div><div style="font-size:31px;font-weight:600;margin-top:6px">Flachstahl S235 40×8</div>
+    <div style="display:flex;justify-content:space-between;margin-top:22px;align-items:center"><span style="font-size:24px;color:#6B6862">Menge</span>
+     <div style="display:flex;align-items:center;gap:18px"><span class="btn" style="padding:6px 22px;background:#EEE;font-size:30px">–</span><b style="font-size:40px">24</b><span class="btn" style="padding:6px 20px;background:#EEE;font-size:30px">+</span></div></div>
+    <div style="display:flex;justify-content:space-between;margin-top:18px;font-size:24px"><span style="color:#6B6862">Lagerplatz</span><b class="mono">R03-F2</b></div>
+    <div style="display:flex;justify-content:space-between;margin-top:12px;font-size:24px"><span style="color:#6B6862">offen lt. Bestellung</span><b>24 / 24</b></div></div>
+   <div class="btn" style="background:#D02F2D;color:#fff;margin-top:24px">Buchen</div>
+   <div style="text-align:center;margin-top:16px;color:#8A8784;font-size:21px">3 von 5 Positionen erfasst</div>
+  </div></div></div>
+ <div class="float" style="left:840px;top:250px;width:640px"><div class="mono" style="font-size:18px;color:#8A8784;letter-spacing:2px">MICROTECH BÜRO+</div><div style="font-size:34px;font-weight:600;margin-top:12px"><span class="ok">✓</span>Wareneingang gebucht</div><div style="font-size:24px;color:#6B6862;margin-top:12px">Bestand R03-F2: 112 → 136 Stk</div></div>
+ <div class="float" style="left:920px;top:560px;width:560px"><div style="font-size:28px;font-weight:600">Kein Zettel. Kein Abtippen.</div><div style="font-size:23px;color:#6B6862;margin-top:10px">Scannen am Smartphone, Handscanner oder Tablet</div></div>
+ <div class="bsp">BEISPIELDARSTELLUNG</div>
+</div>
+
+<!-- 2 MCS Lager Inventur -->
+<div class="m dk" id="lager-inventur">
+ <div class="win" style="left:150px;top:110px;width:1380px;height:880px;border-radius:44px;border:20px solid #0E0E0F;box-shadow:0 40px 90px rgba(0,0,0,.5)">
+  <div style="background:#D02F2D;color:#fff;padding:26px 36px;display:flex;justify-content:space-between;align-items:center"><div><div class="mono" style="font-size:18px;letter-spacing:3px;opacity:.85">MCS LAGER · INVENTUR 2026</div><div style="font-size:36px;font-weight:700;margin-top:4px">Halle 2 · Regal R01–R08</div></div>
+   <div style="text-align:right"><div style="font-size:44px;font-weight:700">68 %</div><div style="width:260px;height:12px;background:rgba(255,255,255,.3);border-radius:6px;margin-top:8px"><div style="width:68%;height:100%;background:#fff;border-radius:6px"></div></div></div></div>
+  <table style="margin-top:6px"><tr><th>LAGERPLATZ</th><th>ARTIKEL</th><th>SOLL</th><th>GEZÄHLT</th><th>DIFFERENZ</th></tr>
+   <tr><td class="mono">R01-A1</td><td>Sechskantschraube M10×40</td><td>500</td><td><b>500</b></td><td><span class="tag" style="background:#E3F3E9;color:#2E7D4F">OK</span></td></tr>
+   <tr><td class="mono">R01-A2</td><td>Scheibe DIN 125 M10</td><td>800</td><td><b>760</b></td><td><span class="tag" style="background:#FBE5E4;color:#B32422">– 40</span></td></tr>
+   <tr><td class="mono">R02-C4</td><td>Flachstahl S235 40×8</td><td>136</td><td><b>136</b></td><td><span class="tag" style="background:#E3F3E9;color:#2E7D4F">OK</span></td></tr>
+   <tr><td class="mono">R03-F2</td><td>Rundrohr 30×2 verzinkt</td><td>64</td><td><b>66</b></td><td><span class="tag" style="background:#FFF1D6;color:#9A6A00">+ 2</span></td></tr>
+   <tr style="background:#FFF7F6"><td class="mono">R04-B1</td><td>Winkelprofil 50×50×5</td><td>40</td><td style="color:#B32422">wird gezählt …</td><td></td></tr>
+  </table>
+  <div style="position:absolute;right:36px;bottom:30px;background:#1C1C1E;color:#fff;border-radius:16px;padding:20px 30px;font-size:26px;font-weight:600">Differenzen an büro+ übergeben →</div>
+ </div>
+ <div class="bsp">BEISPIELDARSTELLUNG</div>
+</div>
+
+<!-- 3 MCS Flow Tickets -->
+<div class="m" id="flow-tickets">
+ <div class="win" style="left:110px;top:90px;width:1460px;height:930px">
+  <div class="wbar"><i></i><i></i><i></i><span>MCS Flow · Tickets</span></div>
+  <div style="display:flex;height:872px">
+   <div style="width:250px;background:#1C1C1E;color:#D8D4CE;padding:30px 24px;font-size:24px;line-height:2.2"><div style="font-weight:700;color:#fff;font-size:30px;margin-bottom:20px"><span style="background:#D02F2D;padding:2px 10px;border-radius:6px">MCS</span> Flow</div><div style="color:#fff">▸ Tickets</div><div>Zeiten</div><div>Projekte</div><div>Kunden</div><div>Berichte</div></div>
+   <div style="flex:1;padding:30px;background:#F7F6F3;display:flex;gap:24px">
+    <script>
+    const col=(t,n,cards)=>`<div style="flex:1"><div style="display:flex;justify-content:space-between;font-weight:600;font-size:25px;margin-bottom:18px">${t}<span class="mono" style="color:#8A8784;font-size:20px">${n}</span></div>${cards.map(c=>`<div class="c" style="margin-bottom:18px;border-left:6px solid ${c[3]}"><div class="mono" style="font-size:16px;color:#8A8784">${c[0]}</div><div style="font-size:24px;font-weight:600;margin-top:6px;line-height:1.25">${c[1]}</div><div style="display:flex;justify-content:space-between;align-items:center;margin-top:14px"><span class="tag" style="background:#F2EFE9;color:#3A3A3C">${c[2]}</span><span style="width:40px;height:40px;border-radius:50%;background:#3A3A3C;color:#fff;font-size:16px;display:flex;align-items:center;justify-content:center;font-weight:600">${c[4]}</span></div></div>`).join('')}</div>`;
+    document.currentScript.parentElement.innerHTML=col('Neu','3',[['#4812 · heute 08:14','Lieferschein druckt falsches Layout','Support','#D02F2D','RM'],['#4810 · gestern','Neuer Benutzer für Lager','Einrichtung','#C9C2B4','JM']])+col('In Arbeit','2',[['#4807 · 1:20 h erfasst','E-Rechnung: XRechnung-Export prüfen','Projekt','#E0A43A','RM'],['#4803 · 0:45 h','Preisliste 2027 einspielen','Support','#E0A43A','SK']])+col('Erledigt','12',[['#4799 · 0:30 h','Inventur-Scanner verbunden','Support','#2E9D5B','JM'],['#4795 · 2:10 h','Auswertung Lagerumschlag','Projekt','#2E9D5B','SK']]);
+    </script></div></div></div>
+ <div class="bsp">BEISPIELDARSTELLUNG</div>
+</div>
+
+<!-- 4 KI Eingangsrechnung -->
+<div class="m dk" id="eingang-ki">
+ <div style="position:absolute;left:140px;top:120px;width:620px;height:860px;background:#fff;border-radius:10px;transform:rotate(-3deg);box-shadow:0 30px 70px rgba(0,0,0,.5);padding:50px 50px">
+  <div style="font-weight:700;font-size:34px">Stahlhandel Muster GmbH</div><div style="font-size:18px;color:#8A8784;margin-top:6px">Industriestr. 5 · 72458 Albstadt</div>
+  <div style="font-size:42px;font-weight:700;margin-top:60px">Rechnung</div><div class="mono" style="font-size:20px;color:#6B6862;margin-top:8px">Nr. RE-2026-4471 · 18.11.2026</div>
+  <div style="margin-top:44px;border-top:2px solid #1C1C1E"></div>
+  <div style="display:flex;justify-content:space-between;font-size:22px;padding:14px 0;border-bottom:1px solid #EEE"><span>Flachstahl S235 40×8</span><span>24 Stk</span></div>
+  <div style="display:flex;justify-content:space-between;font-size:22px;padding:14px 0;border-bottom:1px solid #EEE"><span>Rundrohr 30×2</span><span>10 Stk</span></div>
+  <div style="display:flex;justify-content:space-between;font-size:22px;padding:14px 0;border-bottom:1px solid #EEE"><span>Fracht</span><span>pauschal</span></div>
+  <div style="position:absolute;left:50px;right:50px;bottom:60px;height:70px;background:rgba(208,47,45,.12);border:3px dashed #D02F2D;border-radius:10px"></div>
+ </div>
+ <div class="float" style="left:830px;top:170px;width:720px;background:#fff">
+  <div style="display:flex;align-items:center;gap:14px"><span class="tag" style="background:#D02F2D;color:#fff">KI-VORSCHLAG</span><span class="mono" style="font-size:18px;color:#8A8784">Sicherheit 96 %</span></div>
+  <table style="margin-top:20px"><tr><td style="color:#6B6862">Lieferant</td><td><b>Stahlhandel Muster GmbH</b></td></tr><tr><td style="color:#6B6862">Rechnungs-Nr.</td><td class="mono">RE-2026-4471</td></tr><tr><td style="color:#6B6862">Bestellung</td><td class="mono">B-24117 <span class="tag" style="background:#E3F3E9;color:#2E7D4F">passt</span></td></tr><tr><td style="color:#6B6862">Konto</td><td class="mono">3400 Wareneingang</td></tr><tr><td style="color:#6B6862">Fällig</td><td>02.12.2026 <span class="tag" style="background:#FFF1D6;color:#9A6A00">Skonto möglich</span></td></tr></table>
+  <div style="display:flex;gap:18px;margin-top:28px"><div class="btn" style="flex:1;background:#D02F2D;color:#fff;font-size:28px">Freigeben</div><div class="btn" style="flex:1;background:#F2EFE9;font-size:28px">Korrigieren</div></div>
+  <div style="font-size:21px;color:#8A8784;margin-top:16px;text-align:center">Mensch prüft – KI schlägt nur vor</div>
+ </div>
+ <div class="bsp">BEISPIELDARSTELLUNG</div>
+</div>
+
+<!-- 5 Archiv -->
+<div class="m" id="archiv">
+ <div class="win" style="left:120px;top:110px;width:1440px;height:900px">
+  <div class="wbar"><i></i><i></i><i></i><span>MCS Archiv · Vorgänge</span></div>
+  <div style="display:flex;height:842px">
+   <div style="flex:1.3;padding:26px"><div style="display:flex;gap:14px;margin-bottom:20px"><div style="flex:1;background:#F2EFE9;border-radius:12px;padding:16px 20px;font-size:23px;color:#8A8784">🔍  Kunde, Beleg-Nr., Artikel …</div><span class="tag" style="background:#1C1C1E;color:#fff;padding:14px 18px">2026</span></div>
+    <table><tr><th>BELEG</th><th>DATUM</th><th>PARTNER</th><th>STATUS</th></tr>
+     <tr style="background:#FFF7F6"><td class="mono">RE-26-1188</td><td>18.11.</td><td>Kunde A</td><td><span class="tag" style="background:#E3F3E9;color:#2E7D4F">archiviert ✓</span></td></tr>
+     <tr><td class="mono">LS-26-0931</td><td>17.11.</td><td>Kunde A</td><td><span class="tag" style="background:#E3F3E9;color:#2E7D4F">archiviert ✓</span></td></tr>
+     <tr><td class="mono">AB-26-0877</td><td>12.11.</td><td>Kunde B</td><td><span class="tag" style="background:#E3F3E9;color:#2E7D4F">archiviert ✓</span></td></tr>
+     <tr><td class="mono">ER-26-4471</td><td>18.11.</td><td>Lieferant C</td><td><span class="tag" style="background:#E3F3E9;color:#2E7D4F">archiviert ✓</span></td></tr>
+     <tr><td class="mono">AN-26-0412</td><td>05.11.</td><td>Kunde D</td><td><span class="tag" style="background:#E3F3E9;color:#2E7D4F">archiviert ✓</span></td></tr></table></div>
+   <div style="flex:1;background:#F7F6F3;padding:30px;border-left:1px solid #EEE">
+    <div style="background:#fff;height:520px;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,.1);padding:34px"><div style="font-weight:700;font-size:28px">Rechnung RE-26-1188</div><div style="height:12px;background:#EEE;margin-top:30px;width:80%"></div><div style="height:12px;background:#EEE;margin-top:16px;width:60%"></div><div style="height:12px;background:#EEE;margin-top:16px;width:70%"></div><div style="height:12px;background:#EEE;margin-top:46px"></div><div style="height:12px;background:#EEE;margin-top:16px"></div><div style="height:12px;background:#EEE;margin-top:16px;width:50%"></div></div>
+    <div style="margin-top:24px;font-size:22px;line-height:1.7;color:#3A3A3C"><div><span class="ok" style="width:34px;height:34px;font-size:20px">✓</span>Unveränderbar gespeichert</div><div><span class="ok" style="width:34px;height:34px;font-size:20px">✓</span>Direkt aus büro+ abgelegt</div><div><span class="ok" style="width:34px;height:34px;font-size:20px">✓</span>In Sekunden wiedergefunden</div></div></div>
+  </div></div>
+ <div class="bsp">BEISPIELDARSTELLUNG</div>
+</div>
+
+<!-- 6 Power BI -->
+<div class="m dk" id="bi">
+ <div class="win" style="left:110px;top:100px;width:1460px;height:920px;background:#F7F6F3">
+  <div class="wbar"><i></i><i></i><i></i><span>Auswertung · büro+-Daten</span></div>
+  <div style="padding:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px">
+   <div class="c"><div class="mono" style="font-size:17px;color:#8A8784;letter-spacing:2px">UMSATZ YTD</div><div style="font-size:52px;font-weight:700;margin-top:8px">↑ 8,4 %</div><div style="font-size:20px;color:#2E7D4F">ggü. Vorjahr</div></div>
+   <div class="c"><div class="mono" style="font-size:17px;color:#8A8784;letter-spacing:2px">LAGERUMSCHLAG</div><div style="font-size:52px;font-weight:700;margin-top:8px">5,2×</div><div style="font-size:20px;color:#6B6862">pro Jahr</div></div>
+   <div class="c"><div class="mono" style="font-size:17px;color:#8A8784;letter-spacing:2px">LADENHÜTER</div><div style="font-size:52px;font-weight:700;margin-top:8px;color:#D02F2D">37</div><div style="font-size:20px;color:#6B6862">Artikel > 12 Monate</div></div>
+   <div class="c" style="grid-column:span 2;height:470px"><div style="font-weight:600;font-size:26px">Umsatz je Monat</div><div style="display:flex;align-items:flex-end;gap:22px;height:350px;margin-top:30px">
+    <script>document.currentScript.parentElement.innerHTML=[52,61,58,70,66,74,69,80,77,85,91].map((v,i)=>`<div style="flex:1;height:${v*3.6}px;background:${i==10?'#D02F2D':'#3A3A3C'};border-radius:8px 8px 0 0"></div>`).join('')</script></div></div>
+   <div class="c" style="height:470px"><div style="font-weight:600;font-size:26px">Top-Artikelgruppen</div>
+    <script>document.currentScript.parentElement.insertAdjacentHTML('beforeend',[['Flachstahl',88],['Rohre',71],['Normteile',54],['Profile',40],['Bleche',29]].map(([n,v])=>`<div style="margin-top:26px;font-size:22px">${n}<div style="height:18px;background:#EEE;border-radius:9px;margin-top:8px"><div style="width:${v}%;height:100%;background:#D02F2D;border-radius:9px"></div></div></div>`).join(''))</script></div>
+  </div></div>
+ <div class="bsp">BEISPIELDARSTELLUNG</div>
+</div>
+<script>window.ready=true</script></body></html>

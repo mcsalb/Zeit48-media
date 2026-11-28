@@ -1,0 +1,5 @@
+{"typ":"reel","dark":true,"szenen":[
+ {"dauer":2.6,"label":"MCS Lager","hook":"Inventur mit<br><em>Zettel und Kuli?</em>","hg":120},
+ {"dauer":4.0,"label":"So sieht's aus","hook":"Scannen. <em>Buchen.</em>","hg":96,"bild":"../mcs/assets/ui-lager-scan.png"},
+ {"dauer":4.0,"label":"Inventur","hook":"Differenzen <em>sofort</em> sehen.","hg":90,"bild":"../mcs/assets/ui-lager-inventur.png"},
+ {"dauer":3.0,"label":"Für wen","hook":"Für Betriebe mit<br><em>microtech büro+.</em>","hg":100,"text":"Sprechen Sie uns an."}]}
