@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="overlay.css">
+<style>
+#f{background:#F4EFE4}
+.hl{position:absolute;left:80px;right:80px;top:220px;font-family:AR;font-weight:900;font-size:96px;line-height:.95;letter-spacing:-2px;color:#1E3B2C;text-transform:uppercase}
+.hl em{font-style:normal;color:#E08414}
+.cap{position:absolute;left:70px;right:70px;top:1620px;text-align:center;font-family:AR;font-weight:900;font-size:62px;line-height:1.12;color:#1E3B2C;text-transform:uppercase}
+.cap span{background:#F4EFE4;padding:4px 16px;box-decoration-break:clone;-webkit-box-decoration-break:clone;border-radius:8px}
+.cap b{color:#E08414}
+.card{position:absolute;left:50px;top:540px;width:600px;background:#fff;border-radius:26px;box-shadow:0 24px 60px rgba(0,0,0,.18);padding:40px 40px 34px;transform-origin:30% 50%}
+.card .lb{font-family:AR;font-weight:800;font-size:26px;letter-spacing:5px;color:#D2462E}
+.card .r{display:flex;justify-content:space-between;align-items:baseline;font-family:IN;font-size:31px;color:#1B1B18;padding:14px 0;border-bottom:3px dashed #D9D1BF}
+.card .r b{font-family:AR;font-weight:900;font-size:42px;color:#1E3B2C}
+.card .r i{display:block;font-style:normal;font-family:CV;font-weight:700;font-size:30px;color:#D2462E}
+.stamp{position:absolute;left:110px;top:1110px;border:12px solid #D2462E;border-radius:20px;padding:10px 30px;font-family:AR;font-weight:900;color:#D2462E;text-align:center;font-size:96px;line-height:1;transform-origin:50% 50%}
+.stamp small{display:block;font-size:30px;letter-spacing:4px;font-weight:800;margin-top:6px}
+.chip{position:absolute;left:60px;top:240px;background:#1E3B2C;color:#F4EFE4;border-radius:22px;padding:28px 34px;font-family:IN;font-size:38px;line-height:1.3;width:520px}
+.chip b{color:#F2A33A;font-family:AR;font-weight:900;font-size:46px;display:block;margin-bottom:6px}
+.end{position:absolute;inset:0;background:#1E3B2C;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.end .w{font-family:AR;font-weight:900;font-size:112px;color:#F4EFE4;letter-spacing:-2px}.end .w b{color:#F2A33A}
+.end .n{font-family:CV;font-weight:700;font-size:62px;color:#F2A33A;margin-top:40px;transform:rotate(-2.5deg)}
+.end .h{font-family:IN;font-size:34px;color:#E9E3D4;margin-top:60px;opacity:.8}
+</style></head><body>
+<div id="f"><svg id="s" viewBox="0 0 1080 1920" width="1080" height="1920"></svg><div id="ov"></div></div>
+<script src="timo3.js"></script>
+<script>
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),win=(t,a,b)=>cl((t-a)/(b-a));
+const EO=t=>1-Math.pow(1-cl(t),3),EIO=t=>{t=cl(t);return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2},
+ EB=t=>{t=cl(t);const c=1.3;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2)};
+const HN={relax:[.5,.65,.7,.65,.6,30],offen:[1,1,1,1,1,58],zeig:[.3,1,.05,0,0,35],daumen:[1,0,0,0,0,6],faust:[.2,0,0,0,0,30],kinn:[.8,.85,.25,.15,.1,75]};
+const norm=p=>{p=JSON.parse(JSON.stringify(p));for(const k of ['armL','armR'])if(p[k]&&typeof p[k].h==='string')p[k].h=HN[p[k].h];return p};
+const merge=(a,b)=>{const o=JSON.parse(JSON.stringify(a));for(const k in b){if(b[k]&&typeof b[k]==='object'&&!Array.isArray(b[k]))o[k]=merge(o[k]||{},b[k]);else o[k]=b[k]}return o};
+const lerp=(a,b,k)=>{if(typeof a==='number'&&typeof b==='number')return a+(b-a)*k;if(Array.isArray(a)&&Array.isArray(b))return a.map((v,i)=>lerp(v,b[i],k));
+ if(a&&b&&typeof a==='object'){const o={};for(const x of new Set([...Object.keys(a),...Object.keys(b)]))o[x]=x in a&&x in b?lerp(a[x],b[x],k):(x in b?b[x]:a[x]);return o}return k<.5?a:b};
+function track(base,kfs){const full=[norm(base)];kfs.forEach((k,i)=>full.push(merge(full[i],norm(k.p))));
+ return t=>{let i=-1;for(let j=0;j<kfs.length;j++)if(t>=kfs[j].t)i=j;if(i<0)return full[0];const k=kfs[i];const e=(k.e||EB)(win(t,k.t,k.t+(k.d||.4)));return lerp(full[i],full[i+1],e)}}
+let SYNC,POSE,CAM,SEG,T;
+fetch('vo/sync.json').then(r=>r.json()).then(s=>{SYNC=s;SEG=s.segs;T=s.T+2.4;build();window.render=render;window.ready=true});
+function build(){
+ const s=SEG.map(x=>x.t0),e=SEG.map(x=>x.t1);
+ const rest={armL:{a1:9,a2:4,h:'relax',hr:0},armR:{a1:9,a2:4,h:'relax',hr:0},eye:1,wink:0,tilt:0,lean:0,shrug:0,mouthK:1};
+ POSE=track(rest,[
+  {t:0,d:.01,p:{armR:{a1:26,a2:168,h:'zeig'},tilt:2}},
+  {t:s[0]+1.6,d:.5,p:{tilt:-2,lean:.5}},
+  {t:s[0]+2.4,d:.45,p:{armR:{a1:12,a2:100,h:'offen',hr:20},armL:{a1:12,a2:100,h:'offen',hr:20},lean:-1,tilt:2}},
+  {t:s[1]-.15,d:.45,p:{armL:{a1:10,a2:112,h:'offen',hr:15},armR:{a1:10,a2:112,h:'offen',hr:15},shrug:1,tilt:-7,lean:1.5}},
+  {t:e[1]-.2,d:.4,p:{armL:{a1:9,a2:4,h:'relax',hr:0},armR:{a1:14,a2:-30,h:'relax',hr:0},shrug:0,tilt:0,lean:0}},
+  {t:s[2]-.1,d:.5,p:{armL:{a1:72,a2:96,h:'zeig',hr:0},armR:{a1:9,a2:4,h:'relax'},tilt:-3}},
+  {t:s[2]+(e[2]-s[2])*.62,d:.22,p:{lean:-3,tilt:4,armL:{a1:26,a2:150,h:'offen',hr:0},armR:{a1:26,a2:150,h:'offen',hr:0}},e:EO},
+  {t:s[3]-.1,d:.5,p:{lean:0,tilt:-5,armR:{a1:-55,a2:178,h:'kinn',hr:0},armL:{a1:12,a2:-80,h:'faust',hr:0}}},
+  {t:s[4]-.1,d:.45,p:{tilt:3,armR:{a1:30,a2:168,h:'daumen',hr:0},armL:{a1:9,a2:4,h:'relax'}}},
+  {t:e[4]-.6,d:.25,p:{wink:1},e:EO},
+ ]);
+ CAM=track({x:540,y:560,s:.55},[
+  {t:0,d:.01,p:{x:540,y:560,s:.55}},
+  {t:s[0]+3,d:2,p:{x:540,y:540,s:.58},e:EIO},
+  {t:s[2]-.3,d:.7,p:{x:740,y:600,s:.5},e:EIO},
+  {t:s[2]+(e[2]-s[2])*.62,d:.3,p:{x:790,y:500,s:.66},e:EO},
+  {t:s[3]-.3,d:.8,p:{x:560,y:520,s:.62},e:EIO},
+  {t:s[4]-.3,d:.7,p:{x:540,y:560,s:.55},e:EIO},
+ ]);
+}
+function blinkAt(t){for(let b=1.3;b<T;b+=3.1+((b*7)%1.3)){const d=t-b;if(d>=0&&d<.16)return 1-Math.sin(d/.16*Math.PI)*.95}return 1}
+function speaking(t){return SEG.some(x=>t>=x.t0&&t<=x.t1)}
+function chunks(txt,t0,t1,t){const w=txt.split(' ');const ch=[];let c=[];for(const x of w){c.push(x);if(c.join(' ').length>16||/[.?!:,]$/.test(x)){ch.push(c.join(' '));c=[]}}if(c.length)ch.push(c.join(' '));
+ const tot=ch.reduce((a,x)=>a+x.length,0);let acc=t0;for(const x of ch){const d=(t1-t0)*x.length/tot;if(t<acc+d)return x;acc+=d}return ch[ch.length-1]}
+const CAPS=['2 % Skonto liegen lassen? Das ist teurer, als du denkst.','Viele sagen: Sind doch nur 2 %.','Aber du zahlst nur 20 Tage früher. Aufs Jahr gerechnet sind das rund 37 % Zins.','Selbst ein Kontokorrentkredit ist meistens günstiger.','Also: Skonto ziehen! Speichern und einem Chef schicken.'];
+function render(t){
+ const p=POSE(t),c=CAM(t);
+ // Idle-Schicht
+ p.breath=Math.sin(t*2.3);p.lean=(p.lean||0)+Math.sin(t*.9)*.5;p.tilt=(p.tilt||0)+Math.sin(t*1.3)*1.4;
+ const sp=speaking(t);if(sp)p.nod=Math.sin(t*6.5)*.12;
+ p.eye=(p.eye==null?1:p.eye)*blinkAt(t);
+ const fi=Math.floor(t*30);p.mouth=sp?(SYNC.mouth[fi]||1):(p.mouthK||1);
+ if(!sp&&p.mouthK===1&&t>.1)p.mouth=1;
+ // Pop-in am Anfang
+ const pop=EB(win(t,0,.35));
+ const bgX=-30*Math.sin(t*.25);
+ let svg=`<rect width="1080" height="1920" fill="#F4EFE4"/>`;
+ for(let y=60;y<1920;y+=64)svg+=`<rect x="0" y="${y}" width="1080" height="2" fill="#1E3B2C" opacity=".05"/>`;
+ svg+=`<g transform="translate(${bgX+(c.x-540)*.35} 0)"><path d="M380 520 L860 520 Q900 520 890 560 L760 1460 Q754 1500 714 1500 L230 1500 Q190 1500 198 1460 L330 560 Q336 520 380 520Z" fill="#1E3B2C" opacity=".95"/></g>`;
+ svg+=`<rect x="0" y="1660" width="1080" height="260" fill="#E3D9C5"/>`;
+ const ss=c.s*(0.9+0.1*pop);svg+=`<g transform="translate(${c.x-613*ss} ${c.y-58*ss+(1-pop)*80}) scale(${ss})">${timo3(p)}</g>`;
+ document.getElementById('s').innerHTML=svg;
+ // Overlay
+ const s=SEG.map(x=>x.t0),e=SEG.map(x=>x.t1);
+ let h='<div class="wm" style="top:120px;left:80px">CHEFSACHE<b>48</b></div>';
+ // Headline Hook (ab Frame 0 sichtbar)
+ const hlO=1-win(t,s[1]-.4,s[1]);
+ if(hlO>0)h+=`<div class="hl" style="opacity:${hlO}">2 % Skonto<br><em>liegen lassen?</em></div>`;
+ // Sprechblase S2
+ if(t>s[1]+.9&&t<e[1]+.1){const k=EB(win(t,s[1]+.9,s[1]+1.2));h+=`<div class="bub" style="left:120px;top:420px;transform:scale(${k})">„Sind doch nur 2 %…“</div>`}
+ // Rechenkarte S3
+ if(t>s[2]-.2&&t<s[3]+.2){const k=EB(win(t,s[2]-.2,s[2]+.25))*(1-EO(win(t,s[3]-.3,s[3]+.1)));const d=e[2]-s[2];
+  const rows=[['Rechnung <i>Beispiel</i>','10.000 €',0],['2 % Skonto','200 €',.12],['dafür früher zahlen','20 Tage',.3],['aufs Jahr gerechnet','?',.5]];
+  let r='';rows.forEach(([a,b,o],i)=>{const q=EO(win(t,s[2]+d*o,s[2]+d*o+.3));r+=`<div class="r" style="opacity:${q};transform:translateX(${(1-q)*-30}px)"><span>${a}</span><b>${i==3&&t>s[2]+d*.62?'≈ 37 %':b}</b></div>`});
+  h+=`<div class="card" style="transform:scale(${k});opacity:${cl(k*2)}"><div class="lb">BEISPIELRECHNUNG</div>${r}</div>`;
+  const ts=s[2]+d*.62;if(t>ts){const q=win(t,ts,ts+.18);h+=`<div class="stamp" style="transform:rotate(-10deg) scale(${(3-2*EO(q))*(1-EO(win(t,s[3]-.3,s[3]+.1)))});opacity:${cl(q*3)}">≈ 37 %<small>ZINS PRO JAHR</small></div>`}}
+ // Chip S4
+ if(t>s[3]+.3&&t<e[3]+.4){const k=EB(win(t,s[3]+.3,s[3]+.65))*(1-EO(win(t,e[3],e[3]+.4)));h+=`<div class="chip" style="transform:scale(${k});transform-origin:0 50%"><b>Kontokorrent</b>meist deutlich günstiger als 37&nbsp;%. Prüf deine Konditionen.</div>`}
+ // S5 Titel
+ if(t>s[4]&&t<T-2.3){const k=EB(win(t,s[4],s[4]+.35));h+=`<div class="hl" style="transform:scale(${k});transform-origin:0 0">Skonto<br><em>ziehen. ✓</em></div>`}
+ // Untertitel
+ for(let i=0;i<SEG.length;i++)if(t>=s[i]-.05&&t<=e[i]+.15){const tx=chunks(CAPS[i],s[i],e[i],t);h+=`<div class="cap"><span>${tx.replace(/(\d+ ?%|\d+\.\d+ €|\d+ Tage)/g,'<b>$1</b>')}</span></div>`}
+ // Endkarte
+ if(t>T-2.3){const k=EO(win(t,T-2.3,T-1.9));h+=`<div class="end" style="opacity:${k}"><div class="w" style="transform:scale(${.9+.1*k})">CHEFSACHE<b>48</b></div><div class="n">Speichern & einem Chef schicken ✓</div><div class="h">Beispielrechnung · keine Steuerberatung</div></div>`}
+ h+=`<div class="bar" style="width:${t/T*1080}px"></div>`;
+ document.getElementById('ov').innerHTML=h;
+}
+</script></body></html>

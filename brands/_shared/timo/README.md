@@ -10,3 +10,7 @@ Vorlage der Figur: Charakterblätter „Master Timo“ (Zeit48).
 - `assets.sh` → `cut.py` (Hintergrund entfernen, 4× hochskalieren) + `trace.py` (vtracer) → `raster.py` (SVG → PNG mit Alpha) in `as/`.
 - `as/p1,p2,p4,p5,p6` Gesten, `as/e1,e4,e6` Porträts, `as/m1–m8` Mundformen (weich maskiert).
 - `cut.html`: Szene (Einstellungen = Posen/Porträts, Kamera, Lipsync-Overlay je Asset über `A[..].m`). Render: `python3 rend.py cut.html out.mp4`.
+
+## v3 (aktuell): Rig im Original-Look
+- `timo3.js`: Kopf, Hals/Kragen, Beine aus der Vorlage (`as/L_head/L_neck/L_legs.png`), Pullover + Arme + Hände als Vektor-Rig. Lipsync über `as/m1–m8.png`, Blinzeln/Zwinkern als Lid-Overlay, Kopf neigen/nicken, Atmen, Achselzucken.
+- `anim3.html`: Szene mit Keyframes (Arme a1/a2, Handform, Kamera). Render: `python3 rend.py anim3.html out.mp4`.

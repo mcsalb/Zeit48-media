@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="overlay.css"></head><body>
+<div id="f" style="width:2400px;height:1300px;background:#F4EFE4"><svg width="2400" height="1300" viewBox="0 0 2400 1300" id="s"></svg></div>
+<script src="timo3.js"></script><script>
+const poses=[
+ {mouth:1},
+ {mouth:3,armR:{a1:26,a2:168,h:'zeig'}},
+ {mouth:4,shrug:1,armL:{a1:16,a2:72,h:'offen',hr:-40},armR:{a1:16,a2:72,h:'offen',hr:-40}},
+ {mouth:5,eye:.1,armL:{a1:70,a2:95,h:'zeig'}},
+ {mouth:8,armR:{a1:30,a2:168,h:'daumen'}},
+ {mouth:1,tilt:-5,armR:{a1:-40,a2:176,h:'kinn'},armL:{a1:12,a2:-80,h:'faust'}},
+];
+let h='';poses.forEach((p,i)=>{h+=`<g transform="translate(${-15+i*400} 20) scale(.35)">${timo3(p)}</g>`});document.getElementById('s').innerHTML=h;
+Promise.all([...document.querySelectorAll('image')].map(i=>new Promise(r=>{const im=new Image();im.onload=im.onerror=r;im.src=i.getAttribute('href')}))).then(()=>setTimeout(()=>window.ready=true,300));
+</script></body></html>
