@@ -1,0 +1,15 @@
+@font-face{font-family:AR;src:url(fonts/archivo-latin-900-normal.woff2);font-weight:900}
+@font-face{font-family:AR;src:url(fonts/archivo-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:CV;src:url(fonts/caveat-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:IN;src:url(fonts/inter-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:IN;src:url(fonts/inter-latin-600-normal.woff2);font-weight:600}
+*{margin:0;padding:0;box-sizing:border-box}body{background:#777}
+#f{position:relative;width:1080px;height:1920px;overflow:hidden;background:#F4EFE4}
+#f>svg,#f>canvas{position:absolute;inset:0}
+#ov{position:absolute;inset:0;pointer-events:none}
+.wm{position:absolute;left:90px;top:200px;font-family:AR;font-weight:900;font-size:34px;letter-spacing:2px;color:#1E3B2C}.wm b{color:#E08414}
+.bub{position:absolute;background:#fff;border:6px solid #1E3B2C;border-radius:40px;padding:26px 40px;font-family:CV;font-weight:700;font-size:64px;color:#1E3B2C;white-space:nowrap;transform-origin:0 100%}
+.bub:after{content:"";position:absolute;left:40px;bottom:-40px;border:20px solid transparent;border-top:24px solid #1E3B2C}
+.sub{position:absolute;left:90px;right:90px;top:1380px;text-align:center;font-family:AR;font-weight:900;font-size:58px;line-height:1.1;color:#1E3B2C;text-transform:uppercase}
+.sub span{background:#F4EFE4;padding:6px 14px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bar{position:absolute;left:0;top:0;height:10px;background:#E08414}

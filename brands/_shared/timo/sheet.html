@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="overlay.css"></head><body>
+<div id="f" style="width:2400px;height:1300px;background:#F4EFE4"><svg id="s" width="2400" height="1300" viewBox="0 0 2400 1300"></svg></div>
+<script src="timo.js"></script><script>
+const poses=[
+ {mouth:1},
+ {mouth:3,brow:.3,armR:{a1:28,a2:165,h:'zeig',hr:180}},
+ {mouth:4,brow:.5,shrug:1,armL:{a1:30,a2:110,h:'offen',hr:-80},armR:{a1:30,a2:110,h:'offen',hr:-80}},
+ {mouth:5,brow:1,armL:{a1:12,a2:-78,h:'faust'},armR:{a1:12,a2:-84,h:'faust',back:1}},
+ {mouth:8,happy:1,armR:{a1:30,a2:170,h:'daumen',hr:180}},
+ {mouth:1,eyeX:.6,eyeY:-.6,tilt:-6,armR:{a1:12,a2:-160,h:'kinn',hr:180},armL:{a1:12,a2:-80,h:'faust'}},
+];
+let h='';poses.forEach((p,i)=>{h+=`<g transform="translate(${200+i*400} 1250) scale(.6)">${timo(p)}</g>`});document.getElementById('s').innerHTML=h;
+window.render=()=>{};window.ready=true;
+</script></body></html>
