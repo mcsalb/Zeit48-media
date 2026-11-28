@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:IT;src:url(fonts/inter-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:IT;src:url(fonts/inter-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:IT;src:url(fonts/inter-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:SE;src:url(fonts/instrument-serif-latin-400-italic.woff2);font-style:italic}
+@font-face{font-family:MO;src:url(fonts/jetbrains-mono-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:AR;src:url(fonts/archivo-latin-900-normal.woff2);font-weight:900}
+@font-face{font-family:CV;src:url(fonts/caveat-latin-700-normal.woff2);font-weight:700}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#777}
+#f{position:relative;width:1080px;height:1920px;overflow:hidden;background:#F1ECE2}
+#paper{position:absolute;inset:0;background-image:radial-gradient(rgba(40,30,20,.09) 1.6px,transparent 1.8px);background-size:22px 22px}
+#paper:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 35%,rgba(255,255,255,.55),transparent 70%)}
+.lab{position:absolute;top:150px;left:64px;font-family:MO;font-size:27px;color:#5B564E;letter-spacing:.5px}
+.lab b{font-weight:500;color:#1E3B2C}
+.step{position:absolute;top:150px;right:64px;font-family:MO;font-size:27px;color:#5B564E;letter-spacing:3px;text-align:right}
+.step b{color:#1A1A1A;font-weight:500}
+.dash{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}.dash i{display:block;width:30px;height:6px;border-radius:3px;background:#D8D1C3}.dash i.on{background:#1A1A1A}
+.hl{position:absolute;left:62px;right:62px;top:220px;font-family:IT;font-weight:600;font-size:68px;line-height:1.08;letter-spacing:-2.5px;color:#1A1A1A}
+.hl span{display:inline-block;margin-right:.24em;transition:none}
+.hl .acc{font-family:SE;font-style:italic;font-weight:400;letter-spacing:-1px;font-size:1.08em;padding:0 .12em;margin-right:.2em;position:relative;z-index:0}
+.hl .acc:before{content:"";position:absolute;left:0;right:0;top:12%;bottom:6%;background:#F2A33A;z-index:-1;border-radius:4px;transform-origin:0 50%;transform:scaleX(var(--k,0))}
+.card{position:absolute;background:#fff;border-radius:26px;border:3px solid #1A1A1A;box-shadow:16px 16px 0 -2px transparent}
+.ht{position:absolute;background-image:radial-gradient(#1A1A1A 2.1px,transparent 2.5px);background-size:9px 9px;opacity:.55;border-radius:26px}
+.mono{font-family:MO;font-weight:500}
+.tag{position:absolute;font-family:MO;font-size:24px;background:#1A1A1A;color:#F1ECE2;border-radius:30px;padding:10px 20px;white-space:nowrap}
+.pill{position:absolute;font-family:MO;font-size:24px;background:#F2A33A;color:#1A1A1A;border:3px solid #1A1A1A;border-radius:30px;padding:8px 20px;white-space:nowrap}
+.q{position:absolute;width:64px;height:64px;border-radius:50%;background:#fff;border:3px solid #1A1A1A;font-family:IT;font-weight:700;font-size:40px;display:flex;align-items:center;justify-content:center}
+.bust{position:absolute;left:0;top:0;transform-origin:0 0}
+.bust img{position:absolute;left:0;top:0;display:block}
+.bust .sh{position:absolute;left:0;top:0;background-image:radial-gradient(#1A1A1A 2.6px,transparent 3px);background-size:11px 11px;opacity:.42;-webkit-mask-size:100% 100%;-webkit-mask-repeat:no-repeat}
+.wm{position:absolute;font-family:AR;font-weight:900;letter-spacing:2px;color:#1E3B2C}.wm b{color:#E08414}
+</style></head><body>
+<div id="f"><div id="paper"></div><div id="props"></div><div id="stage"></div><div id="fade" style="position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(rgba(241,236,226,0),#F1ECE2 85%)"></div><div id="ov"></div></div>
+<script>
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),win=(t,a,b)=>cl((t-a)/(b-a));
+const EO=t=>1-Math.pow(1-cl(t),3),EIO=t=>{t=cl(t);return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2},EB=t=>{t=cl(t);const c=1.7;return 1+(c+1)*Math.pow(t-1,3)+c*Math.pow(t-1,2)};
+// Assets: Größe, Mundposition [x,y,Skala,Rot], Anker (Kopfoberkante Mitte)
+const A={"s_neutral": {"w": 1275, "h": 1073, "a": [622, 47], "m": null}, "s_zeig": {"w": 1275, "h": 1073, "a": [608, 46], "m": null}, "s_shrug": {"w": 1278, "h": 1073, "a": [587, 53], "m": null}, "s_hand": {"w": 1261, "h": 1073, "a": [560, 57], "m": null}, "s_daumen": {"w": 1275, "h": 1073, "a": [584, 45], "m": null}, "s_kinn": {"w": 1166, "h": 1073, "a": [480, 53], "m": null}, "s_wow": {"w": 1227, "h": 1073, "a": [592, 49], "m": null}, "s_zwinker": {"w": 1278, "h": 1073, "a": [602, 54], "m": null}, "s_stopp": {"w": 1275, "h": 1073, "a": [616, 54], "m": null}, "s_oben": {"w": 1222, "h": 1073, "a": [478, 54], "m": null}, "b_zeig": {"w": 1182, "h": 1416, "a": [597, 34], "m": null}, "b_neutral": {"w": 1166, "h": 1433, "a": [572, 33], "m": null}};
+const stage=document.getElementById('stage'),L={};
+for(const k in A){const a=A[k],d=document.createElement('div');d.className='bust';d.style.width=a.w+'px';d.style.height=a.h+'px';d.style.display='none';
+ d.innerHTML=`<div class="sh" style="width:${a.w}px;height:${a.h}px;-webkit-mask-image:url(real/${k}.o.png);transform:translate(22px,16px)"></div><img src="real/${k}.o.png" width="${a.w}" height="${a.h}">`+(a.m?`<img class="mo" width="440" height="272" style="transform-origin:0 0">`:'');
+ stage.appendChild(d);L[k]=d}
+
+let SYNC,SEG,T,SHOTS,WORDS;
+const TXT=[
+ {w:'2&nbsp;% Skonto liegen lassen? Das ist [teurer,] als du denkst.',lab:'geld — skonto',step:1},
+ {w:'Viele sagen: Sind doch [nur 2&nbsp;%.]',lab:'geld — skonto',step:2},
+ {w:'Aber du zahlst nur 20 Tage früher. Aufs Jahr gerechnet sind das rund [37&nbsp;% Zins.]',lab:'beispielrechnung',step:3},
+ {w:'Selbst ein Kontokorrentkredit ist meistens [günstiger.]',lab:'vergleich',step:4},
+ {w:'Also: [Skonto ziehen!] Speichern und einem Chef schicken.',lab:'fazit',step:5},
+];
+fetch('vo/sync.json').then(r=>r.json()).then(s=>{SYNC=s;SEG=s.segs;T=s.T+.8;build();window.render=render;
+ Promise.all([...document.images].map(i=>i.complete?1:new Promise(r=>{i.onload=i.onerror=r}))).then(()=>document.fonts.ready).then(()=>window.ready=true)});
+function build(){const s=SEG.map(x=>x.t0),e=SEG.map(x=>x.t1),st=s[2]+(e[2]-s[2])*.66;
+ SHOTS=[
+  {k:'b_zeig',t:0,x:560,y:1010,s:.80},
+  {k:'s_shrug',t:s[1]-.1,x:560,y:1030,s:.98},
+  {k:'s_hand',t:s[2]-.1,x:500,y:1030,s:.98},
+  {k:'s_wow',t:st,x:540,y:990,s:1.08},
+  {k:'s_kinn',t:s[3]-.1,x:560,y:1030,s:1.0},
+  {k:'s_daumen',t:s[4]-.1,x:540,y:1030,s:.98},
+  {k:'s_zwinker',t:e[4]-.9,x:540,y:1010,s:1.04},
+ ];
+ SHOTS.forEach((x,i)=>x.t1=i<SHOTS.length-1?SHOTS[i+1].t:T+1);
+ // Wort-Zeitpunkte nach Zeichenanteil
+ WORDS=TXT.map((x,i)=>{const toks=[];let acc=false;for(let w of x.w.split(' ')){let a=acc;if(w.startsWith('[')){a=true;acc=true;w=w.slice(1)}if(w.endsWith(']')){w=w.slice(0,-1);acc=false}toks.push({w,a})}
+  const tot=toks.reduce((n,t)=>n+t.w.length+1,0);let c=0;const d=e[i]-s[i];toks.forEach(t=>{t.t=s[i]+d*c/tot;c+=t.w.length+1});return toks});
+}
+function speaking(t){return SEG.some(x=>t>=x.t0&&t<=x.t1)}
+function segAt(t){let i=0;for(let j=0;j<SEG.length;j++)if(t>=SEG[j].t0-.35)i=j;return i}
+// Halbton-Schatten + Karte
+const card=(x,y,w,h,rot,inner,k=1,extra='')=>`<div style="position:absolute;left:${x}px;top:${y}px;width:${w}px;height:${h}px;transform:rotate(${rot}deg) scale(${k});opacity:${cl(k*1.5)};transform-origin:50% 60%;${extra}"><div class="ht" style="left:14px;top:14px;width:${w}px;height:${h}px"></div><div class="card" style="left:0;top:0;width:${w}px;height:${h}px;overflow:hidden">${inner}</div></div>`;
+function props(t,i){const s=SEG.map(x=>x.t0),e=SEG.map(x=>x.t1);let h='';
+ const inK=(a,b=.35)=>EB(win(t,a,a+b)),out=(a)=>1-EO(win(t,a,a+.25));
+ if(i===0){const k=(t<.05?1:inK(-1))*out(e[0]+.2);
+  h+=card(150,560,560,330,-4,`<div style="padding:30px 34px"><div class="mono" style="font-size:22px;color:#8A8478;letter-spacing:3px">RECHNUNG · NR. 2026-118</div><div style="font-family:IT;font-weight:700;font-size:92px;letter-spacing:-3px;margin-top:14px;color:#1A1A1A">10.000 €</div><div class="mono" style="font-size:24px;color:#5B564E;margin-top:8px">zahlbar in 30 Tagen</div></div>`,k);
+  const k2=inK(s[0]+.7);h+=`<div class="pill" style="left:560px;top:540px;transform:rotate(6deg) scale(${k2});opacity:${cl(k2*2)*out(e[0]+.2)}">2 % Skonto bei 10 Tagen</div>`;
+  [[760,720,1.4],[830,860,1.9],[700,930,2.4]].forEach(([x,y,d],j)=>{const q=inK(s[0]+d,.3)*out(e[0]+.2);h+=`<div class="q" style="left:${x}px;top:${y}px;transform:scale(${q}) rotate(${(j-1)*10}deg)">?</div>`});
+  const kb=inK(e[0]-1.2);h+=`<div class="tag" style="left:200px;top:930px;transform:scale(${kb});opacity:${cl(kb*2)*out(e[0]+.2)}">// teurer als gedacht</div>`}
+ if(i===1){const k=inK(s[1]-.2)*out(e[1]+.2);
+  h+=card(140,600,600,220,3,`<div style="padding:34px 40px;font-family:SE;font-style:italic;font-size:76px;color:#1A1A1A;line-height:1">„Sind doch<br>nur 2 %…“</div>`,k);
+  const c=inK(s[1]+1);h+=`<div style="position:absolute;left:770px;top:640px;width:170px;height:170px;border-radius:50%;background:#F2A33A;border:4px solid #1A1A1A;display:flex;align-items:center;justify-content:center;font-family:IT;font-weight:700;font-size:44px;transform:scale(${c*(1-.25*EIO(win(t,s[1]+1.6,e[1])))});opacity:${cl(c*2)*out(e[1]+.2)}">200 €</div>`;
+  const tg=inK(s[1]+1.7);h+=`<div class="tag" style="left:700px;top:840px;transform:scale(${tg});opacity:${cl(tg*2)*out(e[1]+.2)}">// klingt nach wenig</div>`}
+ if(i===2){const d=e[2]-s[2],st=s[2]+d*.66;const k=inK(s[2]-.2)*out(e[2]+.25);
+  const cal=(x,y,top,big,sub,col,kk,rot)=>card(x,y,230,250,rot,`<div style="height:62px;background:${col};border-bottom:3px solid #1A1A1A;font-family:MO;font-size:24px;display:flex;align-items:center;justify-content:center;letter-spacing:2px">${top}</div><div style="text-align:center;font-family:IT;font-weight:700;font-size:96px;letter-spacing:-3px;margin-top:10px">${big}</div><div class="mono" style="text-align:center;font-size:22px;color:#5B564E">${sub}</div>`,kk);
+  h+=cal(110,560,'TAG','10','mit Skonto','#F2A33A',k,-5);
+  h+=cal(740,560,'TAG','30','ohne Skonto','#E3DDCF',inK(s[2]+.4)*out(e[2]+.25),5);
+  const ar=EO(win(t,s[2]+.9,s[2]+1.5))*out(e[2]+.25);
+  h+=`<svg style="position:absolute;left:370px;top:600px" width="360" height="170"><path d="M10 90 Q180 ${90-60*ar} ${10+330*ar} 90" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-dasharray="${400*ar} 400" stroke-linecap="round"/>${ar>.95?'<path d="M322 72 L344 92 L318 106" fill="none" stroke="#1A1A1A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>':''}</svg>`;
+  const tg=inK(s[2]+1.3);h+=`<div class="tag" style="left:420px;top:780px;transform:scale(${tg});opacity:${cl(tg*2)*out(e[2]+.25)}">20 Tage früher</div>`;
+  const f=inK(s[2]+d*.42);h+=`<div class="pill" style="left:300px;top:880px;transform:rotate(-2deg) scale(${f});opacity:${cl(f*2)*out(e[2]+.25)}">2 ÷ 98 × 360 ÷ 20</div>`;
+  if(t>st){const q=win(t,st,st+.2);h+=`<div style="position:absolute;left:240px;top:640px;border:12px solid #D2462E;border-radius:22px;padding:14px 36px;background:rgba(241,236,226,.92);font-family:AR;font-weight:900;color:#D2462E;text-align:center;font-size:120px;line-height:1;transform:rotate(-8deg) scale(${(3-2*EO(q))*out(e[2]+.25)});opacity:${cl(q*3)*out(e[2]+.25)}">≈ 37 %<div style="font-size:32px;letter-spacing:5px;margin-top:8px">ZINS PRO JAHR</div></div>`;
+   const b=inK(st+.5);h+=`<div class="tag" style="left:330px;top:930px;transform:scale(${b});opacity:${cl(b*2)*out(e[2]+.25)}">// beispielrechnung</div>`}}
+ if(i===3){const k=inK(s[3]-.2)*out(e[3]+.25);const g1=EO(win(t,s[3]+.4,s[3]+1.2)),g2=EO(win(t,s[3]+1.2,s[3]+2));
+  h+=card(110,570,860,360,-2,`<div style="padding:30px 38px"><div class="mono" style="font-size:22px;color:#8A8478;letter-spacing:3px">WAS KOSTET DICH DAS GELD?</div>
+   <div style="margin-top:28px;font-family:IT;font-weight:600;font-size:32px">Skonto liegen lassen</div><div style="display:flex;align-items:center;gap:16px;margin-top:10px"><div style="height:46px;width:${560*g1}px;background:#D2462E;border:3px solid #1A1A1A;border-radius:10px"></div><b style="font-family:IT;font-size:36px">≈ 37 %</b></div>
+   <div style="margin-top:24px;font-family:IT;font-weight:600;font-size:32px">Kontokorrentkredit</div><div style="display:flex;align-items:center;gap:16px;margin-top:10px"><div style="height:46px;width:${150*g2}px;background:#1E3B2C;border:3px solid #1A1A1A;border-radius:10px"></div><b style="font-family:IT;font-size:30px;opacity:${g2}">meist deutlich weniger</b></div></div>`,k)}
+ if(i===4){const k=inK(s[4]-.2);
+  h+=card(140,580,620,300,-3,`<div style="padding:32px 38px"><div class="mono" style="font-size:22px;color:#8A8478;letter-spacing:3px">ZAHLUNG · TAG 10</div>
+   <div style="display:flex;align-items:center;gap:18px;margin-top:22px"><div style="width:58px;height:58px;border-radius:50%;background:#F2A33A;border:3px solid #1A1A1A;display:flex;align-items:center;justify-content:center;font-size:34px;font-weight:700;font-family:IT">✓</div><div style="font-family:IT;font-weight:700;font-size:46px;letter-spacing:-1px">Skonto gezogen</div></div>
+   <div class="mono" style="font-size:26px;margin-top:22px;color:#1E3B2C">+ 200 € behalten <span style="color:#8A8478">(Beispiel)</span></div></div>`,k);
+  const b=inK(s[4]+1.4);h+=`<div class="pill" style="left:620px;top:860px;transform:rotate(5deg) scale(${b});opacity:${cl(b*2)}">speichern ↓</div>`;
+  const c=inK(s[4]+2.1);h+=`<div class="tag" style="left:250px;top:920px;transform:scale(${c});opacity:${cl(c*2)}">→ einem Chef schicken</div>`}
+ return h}
+function render(t){
+ const i=segAt(t),fi=Math.floor(t*30),sp=speaking(t),mouth=sp?(SYNC.mouth[fi]||1):1;
+ // Kopf/Overlay
+ const tx=TXT[i];let h=`<div class="lab"><span class="wm" style="position:static;font-size:27px">CHEFSACHE<b>48</b></span>&nbsp;&nbsp;// ${tx.lab}</div>`;
+ h+=`<div class="step">SCHRITT <b>${tx.step}/5</b><div class="dash">${[1,2,3,4,5].map(n=>`<i class="${n<=tx.step?'on':''}"></i>`).join('')}</div></div>`;
+ const fade=1-win(t,SEG[i].t1+.15,SEG[i].t1+.35)*(i<SEG.length-1?1:0);
+ h+=`<div class="hl" style="opacity:${fade}">`+WORDS[i].map(w=>{const k=EO(win(t,w.t-.05,w.t+.18));const col=(k>.5||i===0)?'#1A1A1A':'#B3AB9C';
+  return w.a?`<span class="acc" style="color:${col};--k:${EO(win(t,w.t,w.t+.3))}">${w.w}</span>`:`<span style="color:${col};transform:translateY(${(1-k)*6}px)">${w.w}</span>`}).join('')+`</div>`;
+ document.getElementById('ov').innerHTML=h;
+ document.getElementById('props').innerHTML=props(t,i);
+ // Figur
+ for(const k in L)L[k].style.display='none';
+ let ci=SHOTS.findIndex(x=>t>=x.t&&t<x.t1);if(ci<0)ci=SHOTS.length-1;const sh=SHOTS[ci],a=A[sh.k],d=L[sh.k];
+ const pop=EB(win(t,sh.t,sh.t+.32));const sc=sh.s*(.9+.1*pop);
+ const bob=Math.sin(t*2.2)*4+(sp?Math.sin(t*6.5)*2.5:0),rot=Math.sin(t*1.15)*.8+(sp?Math.sin(t*4.7)*.4:0);
+ const pv=900,px=sh.x,py=sh.y+pv*sc+bob+(1-pop)*60;
+ d.style.display='block';d.style.transformOrigin='0 0';d.style.transform=`translate(${px}px,${py}px) rotate(${rot}deg) scale(${sc}) translate(${-a.a[0]}px,${-(a.a[1]+pv)}px)`;
+ if(a.m){const mo=d.querySelector('.mo');if(mouth){mo.style.display='block';mo.src=`as/m${mouth}.png`;const[mx,my,ms,mr]=a.m;mo.style.transform=`translate(${mx-220*ms}px,${my-100*ms*.85}px) rotate(${mr}deg) scale(${ms},${ms*.85})`}else mo.style.display='none'}
+}
+</script></body></html>
