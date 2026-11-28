@@ -14,3 +14,7 @@ Vorlage der Figur: Charakterblätter „Master Timo“ (Zeit48).
 ## v3 (aktuell): Rig im Original-Look
 - `timo3.js`: Kopf, Hals/Kragen, Beine aus der Vorlage (`as/L_head/L_neck/L_legs.png`), Pullover + Arme + Hände als Vektor-Rig. Lipsync über `as/m1–m8.png`, Blinzeln/Zwinkern als Lid-Overlay, Kopf neigen/nicken, Atmen, Achselzucken.
 - `anim3.html`: Szene mit Keyframes (Arme a1/a2, Handform, Kamera). Render: `python3 rend.py anim3.html out.mp4`.
+
+## Story-Stil (wie ersterkunde.de-Referenz)
+- `story.html`: Timo groß als Büste unten (Posen + Porträts mit Kontur + Halbton-Schatten, Lipsync, Wippen/Nicken), oben Wort-für-Wort-Headline mit Akzentwort (Instrument Serif kursiv, orange Marker), Label `// thema` + `SCHRITT n/5`, animierte UI-Karten in der Mitte.
+- Render: `python3 rend.py story.html out.mp4` (Ton aus `vo/voice.wav`, Timing aus `vo/sync.json`).
